@@ -50,7 +50,7 @@ const AboutUs = () => {
             >
               {[
                 { number: 150, suffix: "+", title: "Projects Completed" },
-                { number: 110, suffix: "+", title: "Satisfied Clients" },
+                { number: 100, suffix: "+", title: "Satisfied Clients" },
                 { number: 3, suffix: "+", title: "Years of Experience" },
                 { number: 100, suffix: "%", title: "Success Rate" },
               ].map((item) => (
