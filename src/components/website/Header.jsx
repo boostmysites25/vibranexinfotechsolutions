@@ -13,15 +13,15 @@ import { AiFillInstagram } from "react-icons/ai";
 export const websiteLinks = [
   { id: 1, title: "Home", url: "/" },
   { id: 2, title: "About Us", url: "/about-us" },
-  { 
-    id: 3, 
-    title: "Services", 
+  {
+    id: 3,
+    title: "Services",
     url: "/services",
     submenu: [
       { id: 31, title: "AI Services", url: "/ai-services" },
       { id: 32, title: "AR/VR Development", url: "/ar-vr-development" },
       { id: 33, title: "All Services", url: "/services" },
-    ]
+    ],
   },
   { id: 4, title: "Portfolio", url: "/portfolio" },
   { id: 5, title: "Blogs", url: "/blogs" },
@@ -36,11 +36,11 @@ const Header = () => {
   const submenuRef = useRef(null);
 
   const toggleDrawer = () => setIsOpen((prevState) => !prevState);
-  
+
   const handleSubmenuToggle = (id) => {
     setOpenSubmenu(openSubmenu === id ? null : id);
   };
-  
+
   // Function to handle navigation
   const handleNavigation = (url) => {
     // First close the drawer
@@ -50,7 +50,7 @@ const Header = () => {
       window.location.href = url;
     }, 300);
   };
-  
+
   // Close submenu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -58,7 +58,7 @@ const Header = () => {
         setOpenSubmenu(null);
       }
     };
-    
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -139,7 +139,11 @@ const Header = () => {
               href="/"
               className="flex items-center gap-2"
             >
-              <img src={logo} alt="logo" className="w-[4rem] sm:w-[5rem] scale-110" />
+              <img
+                src={logo}
+                alt="logo"
+                className="w-[4rem] sm:w-[5rem] scale-110"
+              />
             </a>
 
             {/* Desktop Navigation */}
@@ -148,16 +152,29 @@ const Header = () => {
               className="hidden lg:flex items-center gap-10"
             >
               {websiteLinks.map((link) => (
-                <div key={link.id} className="relative" ref={link.submenu ? submenuRef : null}>
+                <div
+                  key={link.id}
+                  className="relative"
+                  ref={link.submenu ? submenuRef : null}
+                >
                   {link.submenu ? (
                     <div className="flex items-center gap-1 cursor-pointer">
-                      <span 
+                      <span
                         onClick={() => handleSubmenuToggle(link.id)}
-                        className={`${pathname.startsWith(link.url) ? "text-secondary" : "text-white"} link flex items-center gap-1`}
+                        className={`${
+                          pathname.startsWith(link.url)
+                            ? "text-secondary"
+                            : "text-white"
+                        } link flex items-center gap-1`}
                       >
-                        {link.title} <IoChevronDown className={`transition-transform duration-300 ${openSubmenu === link.id ? 'rotate-180' : ''}`} />
+                        {link.title}{" "}
+                        <IoChevronDown
+                          className={`transition-transform duration-300 ${
+                            openSubmenu === link.id ? "rotate-180" : ""
+                          }`}
+                        />
                       </span>
-                      
+
                       {/* Submenu */}
                       {openSubmenu === link.id && (
                         <div className="absolute top-full left-0 mt-2 bg-bgGrey border border-secondary rounded-md py-2 min-w-[200px] z-50">
@@ -165,7 +182,11 @@ const Header = () => {
                             <Link
                               key={sublink.id}
                               to={sublink.url}
-                              className={`block px-4 py-2 hover:bg-primary ${pathname === sublink.url ? "text-secondary" : "text-white"}`}
+                              className={`block px-4 py-2 hover:bg-primary ${
+                                pathname === sublink.url
+                                  ? "text-secondary"
+                                  : "text-white"
+                              }`}
                               onClick={() => setOpenSubmenu(null)}
                             >
                               {sublink.title}
@@ -177,7 +198,9 @@ const Header = () => {
                   ) : (
                     <Link
                       to={link.url}
-                      className={`${pathname === link.url ? "text-secondary" : "text-white"} link`}
+                      className={`${
+                        pathname === link.url ? "text-secondary" : "text-white"
+                      } link`}
                     >
                       {link.title}
                     </Link>
@@ -217,7 +240,7 @@ const Header = () => {
             <div className="flex flex-col gap-6">
               {websiteLinks.map((link) => (
                 <div key={link.id} className="flex flex-col">
-                  {link.submenu ? (
+                  {/* {link.submenu ? (
                     <>
                       <div 
                         className="flex items-center justify-between text-3xl text-white font-medium transition-colors duration-300 link cursor-pointer"
@@ -227,7 +250,7 @@ const Header = () => {
                         <IoChevronDown className={`transition-transform duration-300 ${openSubmenu === link.id ? 'rotate-180' : ''}`} />
                       </div>
                       
-                      {/* Mobile Submenu */}
+                      
                       {openSubmenu === link.id && (
                         <div className="mt-4 ml-4 flex flex-col gap-3">
                           {link.submenu.map((sublink) => (
@@ -248,19 +271,19 @@ const Header = () => {
                         </div>
                       )}
                     </>
-                  ) : (
-                    <button
-                      type="button"
-                      className="text-3xl text-white font-medium transition-colors duration-300 link cursor-pointer text-left"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        handleNavigation(link.url);
-                      }}
-                    >
-                      {link.title}
-                    </button>
-                  )}
+                  ) : ( */}
+                  <button
+                    type="button"
+                    className="text-3xl text-white font-medium transition-colors duration-300 link cursor-pointer text-left"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      handleNavigation(link.url);
+                    }}
+                  >
+                    {link.title}
+                  </button>
+                  {/* )} */}
                 </div>
               ))}
             </div>
