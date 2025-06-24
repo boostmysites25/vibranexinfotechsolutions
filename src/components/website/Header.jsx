@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Divide as Hamburger } from "hamburger-react";
 import { companyDetails, logo } from "../../content/constant";
 import Drawer from "react-modern-drawer";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { IoClose, IoMail, IoChevronDown } from "react-icons/io5";
 import { ImPhone } from "react-icons/im";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
@@ -32,6 +32,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   const submenuRef = useRef(null);
 
   const toggleDrawer = () => setIsOpen((prevState) => !prevState);
@@ -220,26 +221,37 @@ const Header = () => {
                       {openSubmenu === link.id && (
                         <div className="mt-4 ml-4 flex flex-col gap-3">
                           {link.submenu.map((sublink) => (
-                            <Link
+                            <div
                               key={sublink.id}
-                              to={sublink.url}
-                              className="text-xl text-white font-medium transition-colors duration-300 link"
-                              onClick={toggleDrawer}
+                              className="text-xl text-white font-medium transition-colors duration-300 link cursor-pointer"
+                              onClick={() => {
+                                toggleDrawer();
+                                setOpenSubmenu(null);
+                                // Use setTimeout to ensure drawer closes before navigation
+                                setTimeout(() => {
+                                  navigate(sublink.url);
+                                }, 100);
+                              }}
                             >
                               {sublink.title}
-                            </Link>
+                            </div>
                           ))}
                         </div>
                       )}
                     </>
                   ) : (
-                    <Link
-                      className="text-3xl text-white font-medium transition-colors duration-300 link"
-                      to={link.url}
-                      onClick={toggleDrawer}
+                    <div
+                      className="text-3xl text-white font-medium transition-colors duration-300 link cursor-pointer"
+                      onClick={() => {
+                        toggleDrawer();
+                        // Use setTimeout to ensure drawer closes before navigation
+                        setTimeout(() => {
+                          navigate(link.url);
+                        }, 100);
+                      }}
                     >
                       {link.title}
-                    </Link>
+                    </div>
                   )}
                 </div>
               ))}
