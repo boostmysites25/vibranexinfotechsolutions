@@ -41,6 +41,16 @@ const Header = () => {
     setOpenSubmenu(openSubmenu === id ? null : id);
   };
   
+  // Function to handle navigation
+  const handleNavigation = (url) => {
+    // First close the drawer
+    setIsOpen(false);
+    // Then navigate after a delay
+    setTimeout(() => {
+      window.location.href = url;
+    }, 300);
+  };
+  
   // Close submenu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -221,37 +231,35 @@ const Header = () => {
                       {openSubmenu === link.id && (
                         <div className="mt-4 ml-4 flex flex-col gap-3">
                           {link.submenu.map((sublink) => (
-                            <div
+                            <button
                               key={sublink.id}
-                              className="text-xl text-white font-medium transition-colors duration-300 link cursor-pointer"
-                              onClick={() => {
-                                toggleDrawer();
+                              type="button"
+                              className="text-xl text-white font-medium transition-colors duration-300 link cursor-pointer text-left"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
                                 setOpenSubmenu(null);
-                                // Use setTimeout to ensure drawer closes before navigation
-                                setTimeout(() => {
-                                  navigate(sublink.url);
-                                }, 100);
+                                handleNavigation(sublink.url);
                               }}
                             >
                               {sublink.title}
-                            </div>
+                            </button>
                           ))}
                         </div>
                       )}
                     </>
                   ) : (
-                    <div
-                      className="text-3xl text-white font-medium transition-colors duration-300 link cursor-pointer"
-                      onClick={() => {
-                        toggleDrawer();
-                        // Use setTimeout to ensure drawer closes before navigation
-                        setTimeout(() => {
-                          navigate(link.url);
-                        }, 100);
+                    <button
+                      type="button"
+                      className="text-3xl text-white font-medium transition-colors duration-300 link cursor-pointer text-left"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        handleNavigation(link.url);
                       }}
                     >
                       {link.title}
-                    </div>
+                    </button>
                   )}
                 </div>
               ))}
