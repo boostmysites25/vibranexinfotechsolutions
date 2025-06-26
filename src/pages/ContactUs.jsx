@@ -39,8 +39,13 @@ const ContactUs = () => {
                 <FaLocationDot size={30} />
               </div>
               <div className="space-y-1 text-black">
-                <h6 className="text4">Location</h6>
-                <p>{companyDetails.address}</p>
+                <h6 className="text4">Locations</h6>
+                <div>
+                  <p className="font-semibold">Headquarters:</p>
+                  <p>{companyDetails.address.headquarters}</p>
+                  <p className="font-semibold mt-2">Registered Office:</p>
+                  <p>{companyDetails.address.registered}</p>
+                </div>
               </div>
             </div>
             <div className="flex lg:justify-end gap-3">

@@ -3,11 +3,25 @@ import SubHeading from "../common/SubHeading";
 import {
   appDevelopmentServices,
   webDevelopmentServices,
+  aiDevelopmentServices,
+  arvrDevelopmentServices,
+  iotDevelopmentServices,
 } from "../../content/services";
 
 const ServicesSection = ({ page }) => {
   const isWeb = page === "web";
-  const services = isWeb ? webDevelopmentServices : appDevelopmentServices;
+  const isApp = page === "app";
+  const isAI = page === "ai";
+  const isARVR = page === "arvr";
+  const isIoT = page === "iot";
+  
+  let services;
+  if (isWeb) services = webDevelopmentServices;
+  else if (isApp) services = appDevelopmentServices;
+  else if (isAI) services = aiDevelopmentServices;
+  else if (isARVR) services = arvrDevelopmentServices;
+  else if (isIoT) services = iotDevelopmentServices;
+  else services = webDevelopmentServices; // Default fallback
 
   return (
     <div
@@ -17,7 +31,13 @@ const ServicesSection = ({ page }) => {
       <div className="wrapper space-y-8 flex flex-col items-center">
         <div data-aos="fade-up" className="text-center">
           <SubHeading
-            heading={`Our ${isWeb ? "Web" : "App"} Development Services`}
+            heading={`Our ${
+              isWeb ? "Web" : 
+              isApp ? "App" : 
+              isAI ? "AI" : 
+              isARVR ? "AR/VR" : 
+              "IoT"
+            } Development Services`}
             className="text-secondary"
           />
         </div>
@@ -26,9 +46,11 @@ const ServicesSection = ({ page }) => {
           data-aos="fade-up"
           className="text1 text-center max-w-4xl mx-auto bg-clip-text text-transparent bg-gradient-to-r from-white to-secondary"
         >
-          {isWeb
-            ? "Transform Your Online Presence with Cutting-Edge Web Solutions"
-            : "Revolutionize User Experiences with Next-Gen App Development"}
+          {isWeb ? "Transform Your Online Presence with Cutting-Edge Web Solutions" :
+           isApp ? "Revolutionize User Experiences with Next-Gen App Development" :
+           isAI ? "Automate Processes and Drive Decisions with Intelligent AI Solutions" :
+           isARVR ? "Create Immersive Digital Experiences with Advanced AR/VR Technology" :
+           "Connect, Monitor, and Optimize with Smart IoT Ecosystems"}
         </h2>
 
         <div className="py-10 flex flex-wrap w-full justify-center gap-8 justify-items-center">

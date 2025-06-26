@@ -108,8 +108,12 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="text-sm">
-                  <span className="font-bold text-secondary">Location:</span><br />
-                  {companyDetails.address}
+                  <span className="font-bold text-secondary">Headquarters:</span><br />
+                  {companyDetails.address.headquarters}
+                </li>
+                <li className="text-sm">
+                  <span className="font-bold text-secondary">Registered Office:</span><br />
+                  {companyDetails.address.registered}
                 </li>
               </ul>
             </div>

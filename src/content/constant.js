@@ -5,8 +5,10 @@ export { logo };
 export const companyDetails = {
   companyName: "TechSolutions",
   phone: "+918667568343",
-  address:
-    "Unit no-101 Oxford Towers, 139 HAL Old Airport Road, Kodihalli, Bangalore, Karnataka, India. Pincode- 560008",
+  address: {
+    headquarters: "TVH Beliciaa Towers, Tower 2 6th Floor, 71/4 M.R.C. Nagar, Raja Annamalai Puram, Chennai, Tamil Nadu, 600028, India",
+    registered: "Unit no-101 Oxford Towers, 139 HAL Old Airport Road, Kodihalli, Bangalore, Karnataka, India. Pincode- 560008"
+  },
   email: "info@vibranexinfotech.com",
   linkedin: "https://www.linkedin.com/company/vibranex-infotech-solutions/",
   instagram:
@@ -18,28 +20,28 @@ export const testimonials = [
   {
     id: 1,
     img: require("../assets/images/testimonial/1.jpg"),
-    quote: `“We needed a mobile app that could streamline our internal processes while providing a great user experience for our customers. Vibranex Infotech Solutions delivered exactly what we envisioned—and more. Their team was proactive, professional, and delivered on time. Highly recommended!”`,
+    quote: `"We needed a mobile app that could streamline our internal processes while providing a great user experience for our customers. Vibranex Infotech Solutions delivered exactly what we envisioned—and more. Their team was proactive, professional, and delivered on time. Highly recommended!"`,
     position: "CEO of EcoFlow Systems",
     author: "Sarah",
   },
   {
     id: 2,
     img: require("../assets/images/testimonial/2.jpg"),
-    quote: `“Working with Vibranex Infotech Solutions was an absolute game-changer for us. They turned our concept into a vibrant, engaging game that quickly became a hit among our target audience. Their creativity and technical expertise are unmatched. We can’t wait to collaborate on our next project!”`,
+    quote: `"Working with Vibranex Infotech Solutions was an absolute game-changer for us. They turned our concept into a vibrant, engaging game that quickly became a hit among our target audience. Their creativity and technical expertise are unmatched. We can't wait to collaborate on our next project!"`,
     position: "Creative Director at PlayForge Studios",
     author: "Jason",
   },
   {
     id: 3,
     img: require("../assets/images/testimonial/3.jpg"),
-    quote: `“Our website was outdated and lacked the functionality our business needed. The team at Vibranex Infotech Solutions transformed it into a modern, sleek platform that not only looks amazing but has also improved our user engagement significantly. They went above and beyond to exceed our expectations.”`,
+    quote: `"Our website was outdated and lacked the functionality our business needed. The team at Vibranex Infotech Solutions transformed it into a modern, sleek platform that not only looks amazing but has also improved our user engagement significantly. They went above and beyond to exceed our expectations."`,
     position: "CTO of Health Innovations Group",
     author: "Amit Sharma",
   },
   {
     id: 4,
     img: require("../assets/images/testimonial/4.jpg"),
-    quote: `“The user interface and experience design provided by Vibranex Infotech Solutions was truly exceptional. They took the time to understand our target audience and created designs that were both intuitive and visually stunning. Our users love the new look and feel!”`,
+    quote: `"The user interface and experience design provided by Vibranex Infotech Solutions was truly exceptional. They took the time to understand our target audience and created designs that were both intuitive and visually stunning. Our users love the new look and feel!"`,
     position: "Product Manager at Nexus Tech",
     author: "Daniel",
   },
@@ -166,7 +168,7 @@ export const coreValues = [
   },
   {
     title: "Adaptability and Agility",
-    desc: "In a world of constant change, we remain agile and adaptable. We thrive on tackling new challenges with speed and precision, ensuring that our clients are always prepared for what’s next.",
+    desc: "In a world of constant change, we remain agile and adaptable. We thrive on tackling new challenges with speed and precision, ensuring that our clients are always prepared for what's next.",
   },
   {
     title: "Excellence in Execution",

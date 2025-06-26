@@ -100,7 +100,11 @@ const Header = () => {
               duration={500}
               className="flex items-center gap-2 cursor-pointer"
             >
-              <img src={logo} alt="logo" className="w-[4rem] sm:w-[5rem] scale-110" />
+              <img
+                src={logo}
+                alt="logo"
+                className="w-[4rem] sm:w-[5rem] scale-110"
+              />
             </Scroll>
 
             {/* Desktop Navigation */}
@@ -113,8 +117,9 @@ const Header = () => {
                   <Link
                     key={link.id}
                     to={link.url}
-                    className={`${pathname === link.url ? "text-primary" : "text-white"
-                      } link`}
+                    className={`${
+                      pathname === link.url ? "text-primary" : "text-white"
+                    } link`}
                   >
                     {link.title}
                   </Link>
@@ -126,8 +131,9 @@ const Header = () => {
                     smooth={true}
                     duration={500}
                     offset={-150}
-                    className={`${pathname === link.url ? "text-primary" : "text-white"
-                      } link`}
+                    className={`${
+                      pathname === link.url ? "text-primary" : "text-white"
+                    } link`}
                   >
                     {link.title}
                   </Scroll>
@@ -137,7 +143,7 @@ const Header = () => {
             <div data-aos="fade-down" className="hidden lg:flex">
               <Link
                 to={`tel:${companyDetails.phone}`}
-                className="btn-fullrounded bg-primary text-white hover:bg-black hover:text-white border border-primary"
+                className="btn-fullrounded bg-secondary text-primary hover:bg-transparent hover:text-secondary border border-secondary font-bold"
               >
                 Let's Talk
               </Link>

@@ -76,7 +76,14 @@ const Footer = () => {
                     {companyDetails.email}
                   </Link>
                 </li>
-                <li className="text-sm max-w-sm">{companyDetails.address}</li>
+                <li className="text-sm max-w-sm">
+                  <span className="font-bold">Headquarters:</span><br />
+                  {companyDetails.address.headquarters}
+                </li>
+                <li className="text-sm max-w-sm">
+                  <span className="font-bold">Registered Office:</span><br />
+                  {companyDetails.address.registered}
+                </li>
               </ul>
             </div>
           </div>

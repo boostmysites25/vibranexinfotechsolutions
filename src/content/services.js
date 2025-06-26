@@ -1,109 +1,39 @@
 export const allServices = [
   {
     id: 1,
-    title: "AI-Powered Business Solutions",
+    title: "AI Development",
     image: require("../assets/images/services/ai.webp"),
     desc: "Transform your business operations with our custom AI solutions that automate processes, generate insights, and drive intelligent decision-making.",
-    link: "/ai-services",
+    link: "/services/ai-development",
     category: "ai",
     problem: "Manual processes consuming valuable time and resources",
     useCase: "Automated document processing reducing manual work by 85%",
-    industries: ["Finance", "Healthcare", "Manufacturing", "Retail"]
+    industries: ["Finance", "Healthcare", "Manufacturing", "Retail"],
   },
-  // {
-  //   id: 2,
-  //   title: "Custom AI Agents",
-  //   image: require("../assets/images/services/aicallingagency.webp"),
-  //   desc: "Deploy intelligent AI agents that handle specific business functions autonomously, from customer service to internal workflows and operations.",
-  //   link: "/ai-services",
-  //   category: "ai",
-  //   problem: "Inefficient customer service and support operations",
-  //   useCase: "AI agent handling 70% of customer inquiries without human intervention",
-  //   industries: ["E-commerce", "SaaS", "Banking", "Insurance"]
-  // },
   {
     id: 3,
     title: "AR/VR Development",
     image: require("../assets/images/services/arvr.webp"),
     desc: "Create immersive augmented and virtual reality experiences that transform how users interact with your products, services, and training materials.",
-    link: "/ar-vr-development",
+    link: "/services/arvr-development",
     category: "arvr",
     problem: "Ineffective traditional training and visualization methods",
-    useCase: "VR training reducing learning time by 60% while improving retention",
-    industries: ["Education", "Real Estate", "Healthcare", "Retail"]
+    useCase:
+      "VR training reducing learning time by 60% while improving retention",
+    industries: ["Education", "Real Estate", "Healthcare", "Retail"],
   },
   {
-    id: 4,
-    title: "Smart Bots & Workflow Automation",
-    image: require("../assets/images/services/chatbot.webp"),
-    desc: "Streamline operations with intelligent bots that automate repetitive tasks, enhance communication, and optimize internal and external workflows.",
-    category: "ai",
-    problem: "Time-consuming repetitive tasks and inefficient workflows",
-    useCase: "Workflow automation reducing processing time from days to minutes",
-    industries: ["HR", "Operations", "Customer Service", "Administration"]
+    id: 16,
+    title: "IoT Development",
+    image: require("../assets/images/services/iot.webp"),
+    desc: "Build connected device ecosystems that collect and analyze data, automate processes, and enable smart decision-making across your organization.",
+    link: "/services/iot-development",
+    category: "iot",
+    problem: "Disconnected systems and lack of real-time operational insights",
+    useCase:
+      "IoT solution reducing equipment downtime by 30% through predictive maintenance",
+    industries: ["Manufacturing", "Healthcare", "Smart Cities", "Agriculture"],
   },
-  {
-    id: 5,
-    title: "Machine Learning Solutions",
-    image: require("../assets/images/services/ml.webp"),
-    desc: "Leverage the power of data with custom machine learning models that predict outcomes, identify patterns, and continuously improve with new information.",
-    category: "ai",
-    problem: "Inability to predict customer behavior and business trends",
-    useCase: "Predictive analytics increasing sales conversion rates by 35%",
-    industries: ["Retail", "Finance", "Healthcare", "Marketing"]
-  },
-  // {
-  //   id: 6,
-  //   title: "Natural Language Processing",
-  //   image: require("../assets/images/services/nlp.webp"),
-  //   desc: "Enable your systems to understand, interpret, and generate human language with our advanced NLP solutions for smarter interactions.",
-  //   category: "ai",
-  //   problem: "Difficulty processing and analyzing unstructured text data",
-  //   useCase: "Sentiment analysis providing real-time customer feedback insights",
-  //   industries: ["Customer Service", "Content Management", "Social Media", "Market Research"]
-  // },
-  // {
-  //   id: 7,
-  //   title: "Immersive AR Product Visualization",
-  //   image: require("../assets/images/services/arvr.webp"),
-  //   desc: "Showcase your products in augmented reality, allowing customers to visualize items in their own space before purchasing.",
-  //   link: "/ar-vr-development",
-  //   category: "arvr",
-  //   problem: "High product return rates due to expectation mismatch",
-  //   useCase: "AR product visualization reducing returns by 40%",
-  //   industries: ["Furniture", "Fashion", "Home Decor", "Electronics"]
-  // },
-  {
-    id: 8,
-    title: "VR Training & Simulation",
-    image: require("../assets/images/services/gaming.webp"),
-    desc: "Create realistic virtual training environments that improve skill acquisition, retention, and safety for complex or high-risk procedures.",
-    link: "/ar-vr-development",
-    category: "arvr",
-    problem: "High-risk or expensive traditional training methods",
-    useCase: "VR simulation reducing training costs by 50% while improving safety",
-    industries: ["Manufacturing", "Healthcare", "Aviation", "Military"]
-  },
-  // {
-  //   id: 9,
-  //   title: "Data Analytics & Business Intelligence",
-  //   image: require("../assets/images/services/data-analytics.webp"),
-  //   desc: "Transform raw data into actionable insights with our comprehensive analytics solutions that drive strategic decision-making and business growth.",
-  //   category: "ai",
-  //   problem: "Overwhelming data without actionable insights",
-  //   useCase: "Interactive dashboards enabling data-driven decisions that increased efficiency by 25%",
-  //   industries: ["Finance", "Retail", "Healthcare", "Manufacturing"]
-  // },
-  // {
-  //   id: 10,
-  //   title: "Computer Vision Systems",
-  //   image: require("../assets/images/services/ai.webp"),
-  //   desc: "Implement AI-powered visual recognition systems for object detection, facial recognition, quality control, and automated monitoring.",
-  //   category: "ai",
-  //   problem: "Manual visual inspection processes prone to human error",
-  //   useCase: "Automated quality control reducing defects by 90%",
-  //   industries: ["Manufacturing", "Security", "Retail", "Healthcare"]
-  // },
   {
     id: 11,
     title: "Mobile App Development",
@@ -113,18 +43,18 @@ export const allServices = [
     category: "development",
     problem: "Lack of mobile presence and engagement",
     useCase: "AI-enhanced mobile app increasing customer engagement by 40%",
-    industries: ["Retail", "Finance", "Healthcare", "Entertainment"]
+    industries: ["Retail", "Finance", "Healthcare", "Entertainment"],
   },
   {
     id: 12,
-    title: "Web Development (Full Stack)",
+    title: "Web Development",
     image: require("../assets/images/services/web-development.webp"),
     desc: "Build modern, responsive websites and web applications with integrated AI features for enhanced user experiences.",
     link: "/web-development",
     category: "development",
     problem: "Outdated web presence with poor user experience",
     useCase: "AI-powered website increasing conversion rates by 30%",
-    industries: ["E-commerce", "SaaS", "Media", "Professional Services"]
+    industries: ["E-commerce", "SaaS", "Media", "Professional Services"],
   },
   {
     id: 13,
@@ -134,7 +64,7 @@ export const allServices = [
     category: "development",
     problem: "Trust and transparency issues in transactions and record-keeping",
     useCase: "Blockchain solution reducing fraud by 95% in supply chain",
-    industries: ["Finance", "Supply Chain", "Healthcare", "Real Estate"]
+    industries: ["Finance", "Supply Chain", "Healthcare", "Real Estate"],
   },
   {
     id: 14,
@@ -144,10 +74,20 @@ export const allServices = [
     category: "development",
     problem: "Poor user engagement and high bounce rates",
     useCase: "Redesigned UX increasing user retention by 55%",
-    industries: ["E-commerce", "SaaS", "Finance", "Healthcare"]
+    industries: ["E-commerce", "SaaS", "Finance", "Healthcare"],
+  },
+  {
+    id: 15,
+    title: "CRM Software Development",
+    image: require("../assets/images/services/crm.webp"),
+    desc: "Build custom CRM solutions that streamline customer relationships, automate sales processes, and provide actionable insights for business growth.",
+    category: "development",
+    problem: "Inefficient customer management and lost sales opportunities",
+    useCase:
+      "Custom CRM increasing sales conversion by 40% and improving customer retention",
+    industries: ["Sales", "Marketing", "Customer Service", "Retail"],
   },
 ];
-
 
 // Web Development Services
 export const webDevelopmentServices = [
@@ -232,7 +172,8 @@ export const serviceDetailsList = [
   {
     id: 1,
     title: "AI-Powered Calling Agency",
-    shortDescription: "Voice and video calling systems with human-like interaction",
+    shortDescription:
+      "Voice and video calling systems with human-like interaction",
     heroImage: "/images/services/ai-calling.jpg",
     overview:
       "We design sophisticated voice and video calling systems that sound natural, speak multiple languages, and help businesses automate calls without losing the human touch. Our AI calling solutions enable seamless customer interactions, appointment scheduling, and follow-ups at scale.",
@@ -249,7 +190,12 @@ export const serviceDetailsList = [
     technologies: [
       {
         name: "Voice AI",
-        items: ["Google WaveNet", "Amazon Polly", "Microsoft Neural Voices", "OpenAI TTS"],
+        items: [
+          "Google WaveNet",
+          "Amazon Polly",
+          "Microsoft Neural Voices",
+          "OpenAI TTS",
+        ],
       },
       {
         name: "Conversation AI",
@@ -261,7 +207,11 @@ export const serviceDetailsList = [
       },
       {
         name: "Analytics",
-        items: ["Call sentiment analysis", "Conversation intelligence", "Performance metrics"],
+        items: [
+          "Call sentiment analysis",
+          "Conversation intelligence",
+          "Performance metrics",
+        ],
       },
     ],
     process: [
@@ -307,7 +257,8 @@ export const serviceDetailsList = [
   {
     id: 2,
     title: "AI-Powered Chatbot Development",
-    shortDescription: "Intelligent conversational interfaces for customer engagement",
+    shortDescription:
+      "Intelligent conversational interfaces for customer engagement",
     heroImage: "/images/services/ai-chatbot.jpg",
     overview:
       "We build intelligent chatbots that truly understand human language, providing fast, helpful responses while making customer support more efficient, quicker, and available 24/7. Our chatbots learn from interactions to continuously improve their performance and accuracy.",
@@ -323,9 +274,29 @@ export const serviceDetailsList = [
     ],
     technologies: [
       { name: "AI Models", items: ["GPT-4", "Claude", "LLaMA", "PaLM"] },
-      { name: "Platforms", items: ["Dialogflow", "Rasa", "Microsoft Bot Framework", "Custom solutions"] },
-      { name: "Integration", items: ["Website widgets", "WhatsApp", "Slack", "Microsoft Teams", "Telegram"] },
-      { name: "Backend", items: ["Node.js", "Python", "Vector databases", "Redis"] },
+      {
+        name: "Platforms",
+        items: [
+          "Dialogflow",
+          "Rasa",
+          "Microsoft Bot Framework",
+          "Custom solutions",
+        ],
+      },
+      {
+        name: "Integration",
+        items: [
+          "Website widgets",
+          "WhatsApp",
+          "Slack",
+          "Microsoft Teams",
+          "Telegram",
+        ],
+      },
+      {
+        name: "Backend",
+        items: ["Node.js", "Python", "Vector databases", "Redis"],
+      },
     ],
     process: [
       {
@@ -390,19 +361,45 @@ export const serviceDetailsList = [
         items: ["Ethereum", "Polygon", "Solana", "Hyperledger Fabric", "Corda"],
       },
       { name: "Languages", items: ["Solidity", "Rust", "Go", "JavaScript"] },
-      { name: "Tools", items: ["Truffle", "Hardhat", "Web3.js", "Ethers.js", "The Graph"] },
-      { name: "Security", items: ["Smart contract auditing", "Penetration testing", "Formal verification"] },
+      {
+        name: "Tools",
+        items: ["Truffle", "Hardhat", "Web3.js", "Ethers.js", "The Graph"],
+      },
+      {
+        name: "Security",
+        items: [
+          "Smart contract auditing",
+          "Penetration testing",
+          "Formal verification",
+        ],
+      },
     ],
     process: [
-      { step: 1, title: "Use Case Analysis", description: "Identify blockchain-appropriate problems" },
+      {
+        step: 1,
+        title: "Use Case Analysis",
+        description: "Identify blockchain-appropriate problems",
+      },
       {
         step: 2,
         title: "Architecture Design",
         description: "Select platform and design system",
       },
-      { step: 3, title: "Development", description: "Build smart contracts and applications" },
-      { step: 4, title: "Security Audit", description: "Verify code security and reliability" },
-      { step: 5, title: "Testing", description: "Validate functionality and performance" },
+      {
+        step: 3,
+        title: "Development",
+        description: "Build smart contracts and applications",
+      },
+      {
+        step: 4,
+        title: "Security Audit",
+        description: "Verify code security and reliability",
+      },
+      {
+        step: 5,
+        title: "Testing",
+        description: "Validate functionality and performance",
+      },
       {
         step: 6,
         title: "Deployment & Monitoring",
@@ -435,21 +432,49 @@ export const serviceDetailsList = [
       "Disaster recovery planning",
     ],
     technologies: [
-      { name: "Platforms", items: ["AWS", "Microsoft Azure", "Google Cloud", "IBM Cloud"] },
-      { name: "Infrastructure", items: ["Terraform", "CloudFormation", "Kubernetes", "Docker"] },
-      { name: "DevOps", items: ["CI/CD pipelines", "Jenkins", "GitHub Actions", "GitLab CI"] },
-      { name: "Monitoring", items: ["Prometheus", "Grafana", "New Relic", "Datadog"] },
+      {
+        name: "Platforms",
+        items: ["AWS", "Microsoft Azure", "Google Cloud", "IBM Cloud"],
+      },
+      {
+        name: "Infrastructure",
+        items: ["Terraform", "CloudFormation", "Kubernetes", "Docker"],
+      },
+      {
+        name: "DevOps",
+        items: ["CI/CD pipelines", "Jenkins", "GitHub Actions", "GitLab CI"],
+      },
+      {
+        name: "Monitoring",
+        items: ["Prometheus", "Grafana", "New Relic", "Datadog"],
+      },
     ],
     process: [
-      { step: 1, title: "Assessment", description: "Evaluate current infrastructure and needs" },
+      {
+        step: 1,
+        title: "Assessment",
+        description: "Evaluate current infrastructure and needs",
+      },
       {
         step: 2,
         title: "Strategy",
         description: "Develop migration plan and architecture",
       },
-      { step: 3, title: "Preparation", description: "Set up cloud environment and tools" },
-      { step: 4, title: "Migration", description: "Move applications and data in phases" },
-      { step: 5, title: "Optimization", description: "Fine-tune performance and costs" },
+      {
+        step: 3,
+        title: "Preparation",
+        description: "Set up cloud environment and tools",
+      },
+      {
+        step: 4,
+        title: "Migration",
+        description: "Move applications and data in phases",
+      },
+      {
+        step: 5,
+        title: "Optimization",
+        description: "Fine-tune performance and costs",
+      },
       {
         step: 6,
         title: "Management",
@@ -483,20 +508,42 @@ export const serviceDetailsList = [
     ],
     technologies: [
       { name: "Platforms", items: ["Tableau", "Power BI", "Looker", "Qlik"] },
-      { name: "Data Processing", items: ["Apache Spark", "Hadoop", "Kafka", "Airflow"] },
+      {
+        name: "Data Processing",
+        items: ["Apache Spark", "Hadoop", "Kafka", "Airflow"],
+      },
       { name: "Languages", items: ["Python", "R", "SQL", "DAX"] },
-      { name: "Cloud Analytics", items: ["Snowflake", "BigQuery", "Redshift", "Azure Synapse"] },
+      {
+        name: "Cloud Analytics",
+        items: ["Snowflake", "BigQuery", "Redshift", "Azure Synapse"],
+      },
     ],
     process: [
-      { step: 1, title: "Data Discovery", description: "Identify data sources and requirements" },
+      {
+        step: 1,
+        title: "Data Discovery",
+        description: "Identify data sources and requirements",
+      },
       {
         step: 2,
         title: "Data Preparation",
         description: "Clean, transform, and structure data",
       },
-      { step: 3, title: "Data Modeling", description: "Create analytical data models" },
-      { step: 4, title: "Analysis", description: "Apply statistical and analytical methods" },
-      { step: 5, title: "Visualization", description: "Build intuitive dashboards and reports" },
+      {
+        step: 3,
+        title: "Data Modeling",
+        description: "Create analytical data models",
+      },
+      {
+        step: 4,
+        title: "Analysis",
+        description: "Apply statistical and analytical methods",
+      },
+      {
+        step: 5,
+        title: "Visualization",
+        description: "Build intuitive dashboards and reports",
+      },
       {
         step: 6,
         title: "Implementation",
@@ -529,18 +576,58 @@ export const serviceDetailsList = [
       "Industrial IoT implementations",
     ],
     technologies: [
-      { name: "Hardware", items: ["Arduino", "Raspberry Pi", "ESP32", "Custom hardware"] },
-      { name: "Connectivity", items: ["WiFi", "Bluetooth", "LoRaWAN", "5G", "MQTT"] },
-      { name: "Platforms", items: ["AWS IoT", "Azure IoT", "Google Cloud IoT", "ThingsBoard"] },
-      { name: "Analytics", items: ["Stream processing", "Time-series databases", "Machine learning"] },
+      {
+        name: "Hardware",
+        items: ["Arduino", "Raspberry Pi", "ESP32", "Custom hardware"],
+      },
+      {
+        name: "Connectivity",
+        items: ["WiFi", "Bluetooth", "LoRaWAN", "5G", "MQTT"],
+      },
+      {
+        name: "Platforms",
+        items: ["AWS IoT", "Azure IoT", "Google Cloud IoT", "ThingsBoard"],
+      },
+      {
+        name: "Analytics",
+        items: [
+          "Stream processing",
+          "Time-series databases",
+          "Machine learning",
+        ],
+      },
     ],
     process: [
-      { step: 1, title: "Concept Development", description: "Define IoT use case and requirements" },
-      { step: 2, title: "Hardware Selection", description: "Choose appropriate devices and sensors" },
-      { step: 3, title: "Architecture Design", description: "Plan connectivity and data flow" },
-      { step: 4, title: "Development", description: "Build device firmware and backend systems" },
-      { step: 5, title: "Testing", description: "Validate functionality and security" },
-      { step: 6, title: "Deployment", description: "Roll out and monitor the IoT ecosystem" },
+      {
+        step: 1,
+        title: "Concept Development",
+        description: "Define IoT use case and requirements",
+      },
+      {
+        step: 2,
+        title: "Hardware Selection",
+        description: "Choose appropriate devices and sensors",
+      },
+      {
+        step: 3,
+        title: "Architecture Design",
+        description: "Plan connectivity and data flow",
+      },
+      {
+        step: 4,
+        title: "Development",
+        description: "Build device firmware and backend systems",
+      },
+      {
+        step: 5,
+        title: "Testing",
+        description: "Validate functionality and security",
+      },
+      {
+        step: 6,
+        title: "Deployment",
+        description: "Roll out and monitor the IoT ecosystem",
+      },
     ],
     benefits: [
       "Real-time operational visibility",
@@ -553,7 +640,8 @@ export const serviceDetailsList = [
   {
     id: 7,
     title: "Artificial Intelligence Development",
-    shortDescription: "Custom AI solutions for business automation and intelligence",
+    shortDescription:
+      "Custom AI solutions for business automation and intelligence",
     heroImage: "/images/services/ai.jpg",
     overview:
       "We develop AI tools tailored to your business—from automation to intelligent recommendations—so your systems work faster, learn smarter, and think ahead. Our AI solutions solve real business problems while adapting to changing conditions and improving over time.",
@@ -568,18 +656,51 @@ export const serviceDetailsList = [
       "AI strategy consulting",
     ],
     technologies: [
-      { name: "Frameworks", items: ["TensorFlow", "PyTorch", "Scikit-learn", "Hugging Face"] },
-      { name: "Cloud AI", items: ["AWS SageMaker", "Google Vertex AI", "Azure ML"] },
+      {
+        name: "Frameworks",
+        items: ["TensorFlow", "PyTorch", "Scikit-learn", "Hugging Face"],
+      },
+      {
+        name: "Cloud AI",
+        items: ["AWS SageMaker", "Google Vertex AI", "Azure ML"],
+      },
       { name: "Data Processing", items: ["Pandas", "Spark", "Dask", "Ray"] },
-      { name: "Deployment", items: ["MLOps", "Model serving", "Edge AI", "TensorRT"] },
+      {
+        name: "Deployment",
+        items: ["MLOps", "Model serving", "Edge AI", "TensorRT"],
+      },
     ],
     process: [
-      { step: 1, title: "Problem Definition", description: "Identify AI-appropriate challenges" },
-      { step: 2, title: "Data Collection", description: "Gather and prepare training data" },
-      { step: 3, title: "Model Development", description: "Build and train AI models" },
-      { step: 4, title: "Evaluation", description: "Test performance against metrics" },
-      { step: 5, title: "Deployment", description: "Integrate AI into production systems" },
-      { step: 6, title: "Monitoring", description: "Track performance and retrain as needed" },
+      {
+        step: 1,
+        title: "Problem Definition",
+        description: "Identify AI-appropriate challenges",
+      },
+      {
+        step: 2,
+        title: "Data Collection",
+        description: "Gather and prepare training data",
+      },
+      {
+        step: 3,
+        title: "Model Development",
+        description: "Build and train AI models",
+      },
+      {
+        step: 4,
+        title: "Evaluation",
+        description: "Test performance against metrics",
+      },
+      {
+        step: 5,
+        title: "Deployment",
+        description: "Integrate AI into production systems",
+      },
+      {
+        step: 6,
+        title: "Monitoring",
+        description: "Track performance and retrain as needed",
+      },
     ],
     benefits: [
       "Automation of repetitive tasks",
@@ -607,18 +728,51 @@ export const serviceDetailsList = [
       "Immersive storytelling",
     ],
     technologies: [
-      { name: "Platforms", items: ["Unity", "Unreal Engine", "ARKit", "ARCore"] },
-      { name: "Hardware", items: ["Oculus", "HTC Vive", "Microsoft HoloLens", "Mobile AR"] },
+      {
+        name: "Platforms",
+        items: ["Unity", "Unreal Engine", "ARKit", "ARCore"],
+      },
+      {
+        name: "Hardware",
+        items: ["Oculus", "HTC Vive", "Microsoft HoloLens", "Mobile AR"],
+      },
       { name: "3D", items: ["Blender", "Maya", "3ds Max", "WebXR"] },
-      { name: "Interaction", items: ["Motion tracking", "Spatial mapping", "Gesture recognition"] },
+      {
+        name: "Interaction",
+        items: ["Motion tracking", "Spatial mapping", "Gesture recognition"],
+      },
     ],
     process: [
-      { step: 1, title: "Concept Design", description: "Define experience goals and storyboarding" },
-      { step: 2, title: "3D Asset Creation", description: "Develop models and environments" },
-      { step: 3, title: "Interaction Design", description: "Create intuitive user interactions" },
-      { step: 4, title: "Development", description: "Build the VR/AR application" },
-      { step: 5, title: "Testing", description: "Validate user experience and performance" },
-      { step: 6, title: "Deployment", description: "Launch on target platforms" },
+      {
+        step: 1,
+        title: "Concept Design",
+        description: "Define experience goals and storyboarding",
+      },
+      {
+        step: 2,
+        title: "3D Asset Creation",
+        description: "Develop models and environments",
+      },
+      {
+        step: 3,
+        title: "Interaction Design",
+        description: "Create intuitive user interactions",
+      },
+      {
+        step: 4,
+        title: "Development",
+        description: "Build the VR/AR application",
+      },
+      {
+        step: 5,
+        title: "Testing",
+        description: "Validate user experience and performance",
+      },
+      {
+        step: 6,
+        title: "Deployment",
+        description: "Launch on target platforms",
+      },
     ],
     benefits: [
       "Enhanced training effectiveness and retention",
@@ -646,18 +800,54 @@ export const serviceDetailsList = [
       "Accessibility compliance",
     ],
     technologies: [
-      { name: "Design Tools", items: ["Figma", "Adobe XD", "Sketch", "InVision"] },
-      { name: "Prototyping", items: ["Framer", "Principle", "ProtoPie", "Axure"] },
-      { name: "Research", items: ["User interviews", "A/B testing", "Heatmaps", "Analytics"] },
-      { name: "Frameworks", items: ["Material Design", "Apple HIG", "Design systems"] },
+      {
+        name: "Design Tools",
+        items: ["Figma", "Adobe XD", "Sketch", "InVision"],
+      },
+      {
+        name: "Prototyping",
+        items: ["Framer", "Principle", "ProtoPie", "Axure"],
+      },
+      {
+        name: "Research",
+        items: ["User interviews", "A/B testing", "Heatmaps", "Analytics"],
+      },
+      {
+        name: "Frameworks",
+        items: ["Material Design", "Apple HIG", "Design systems"],
+      },
     ],
     process: [
-      { step: 1, title: "Discovery", description: "Understand users and business goals" },
-      { step: 2, title: "Research", description: "Analyze user needs and behaviors" },
-      { step: 3, title: "Information Architecture", description: "Structure content and flow" },
-      { step: 4, title: "Wireframing", description: "Create low-fidelity layouts" },
-      { step: 5, title: "Visual Design", description: "Develop the aesthetic language" },
-      { step: 6, title: "Prototyping & Testing", description: "Validate with real users" },
+      {
+        step: 1,
+        title: "Discovery",
+        description: "Understand users and business goals",
+      },
+      {
+        step: 2,
+        title: "Research",
+        description: "Analyze user needs and behaviors",
+      },
+      {
+        step: 3,
+        title: "Information Architecture",
+        description: "Structure content and flow",
+      },
+      {
+        step: 4,
+        title: "Wireframing",
+        description: "Create low-fidelity layouts",
+      },
+      {
+        step: 5,
+        title: "Visual Design",
+        description: "Develop the aesthetic language",
+      },
+      {
+        step: 6,
+        title: "Prototyping & Testing",
+        description: "Validate with real users",
+      },
     ],
     benefits: [
       "Increased user satisfaction and engagement",
@@ -685,18 +875,54 @@ export const serviceDetailsList = [
       "Cross-platform deployment",
     ],
     technologies: [
-      { name: "Engines", items: ["Unity", "Unreal Engine", "Godot", "Custom engines"] },
-      { name: "Platforms", items: ["iOS", "Android", "PC", "Console", "WebGL"] },
-      { name: "Art", items: ["2D/3D modeling", "Animation", "VFX", "UI design"] },
-      { name: "Backend", items: ["Multiplayer servers", "Leaderboards", "Cloud saves"] },
+      {
+        name: "Engines",
+        items: ["Unity", "Unreal Engine", "Godot", "Custom engines"],
+      },
+      {
+        name: "Platforms",
+        items: ["iOS", "Android", "PC", "Console", "WebGL"],
+      },
+      {
+        name: "Art",
+        items: ["2D/3D modeling", "Animation", "VFX", "UI design"],
+      },
+      {
+        name: "Backend",
+        items: ["Multiplayer servers", "Leaderboards", "Cloud saves"],
+      },
     ],
     process: [
-      { step: 1, title: "Concept", description: "Define game concept and core mechanics" },
-      { step: 2, title: "Pre-production", description: "Create design documents and prototypes" },
-      { step: 3, title: "Production", description: "Develop gameplay, assets, and systems" },
-      { step: 4, title: "Testing", description: "Playtest and refine game experience" },
-      { step: 5, title: "Polish", description: "Optimize performance and add final touches" },
-      { step: 6, title: "Launch", description: "Release and post-launch support" },
+      {
+        step: 1,
+        title: "Concept",
+        description: "Define game concept and core mechanics",
+      },
+      {
+        step: 2,
+        title: "Pre-production",
+        description: "Create design documents and prototypes",
+      },
+      {
+        step: 3,
+        title: "Production",
+        description: "Develop gameplay, assets, and systems",
+      },
+      {
+        step: 4,
+        title: "Testing",
+        description: "Playtest and refine game experience",
+      },
+      {
+        step: 5,
+        title: "Polish",
+        description: "Optimize performance and add final touches",
+      },
+      {
+        step: 6,
+        title: "Launch",
+        description: "Release and post-launch support",
+      },
     ],
     benefits: [
       "Engaging entertainment experiences",
@@ -724,18 +950,44 @@ export const serviceDetailsList = [
       "Mobile payment integration",
     ],
     technologies: [
-      { name: "Native", items: ["Swift", "SwiftUI", "Kotlin", "Jetpack Compose"] },
+      {
+        name: "Native",
+        items: ["Swift", "SwiftUI", "Kotlin", "Jetpack Compose"],
+      },
       { name: "Cross-Platform", items: ["React Native", "Flutter", "Xamarin"] },
-      { name: "Backend", items: ["Firebase", "AWS Amplify", "Node.js", "GraphQL"] },
+      {
+        name: "Backend",
+        items: ["Firebase", "AWS Amplify", "Node.js", "GraphQL"],
+      },
       { name: "Testing", items: ["XCTest", "Espresso", "Detox", "Appium"] },
     ],
     process: [
-      { step: 1, title: "Requirements", description: "Define app features and user stories" },
-      { step: 2, title: "UX/UI Design", description: "Create mobile-first user experience" },
-      { step: 3, title: "Development", description: "Build frontend and backend components" },
-      { step: 4, title: "Testing", description: "Ensure quality across devices" },
+      {
+        step: 1,
+        title: "Requirements",
+        description: "Define app features and user stories",
+      },
+      {
+        step: 2,
+        title: "UX/UI Design",
+        description: "Create mobile-first user experience",
+      },
+      {
+        step: 3,
+        title: "Development",
+        description: "Build frontend and backend components",
+      },
+      {
+        step: 4,
+        title: "Testing",
+        description: "Ensure quality across devices",
+      },
       { step: 5, title: "Deployment", description: "Submit to app stores" },
-      { step: 6, title: "Maintenance", description: "Provide updates and support" },
+      {
+        step: 6,
+        title: "Maintenance",
+        description: "Provide updates and support",
+      },
     ],
     benefits: [
       "Enhanced customer engagement",
@@ -763,18 +1015,51 @@ export const serviceDetailsList = [
       "Performance optimization",
     ],
     technologies: [
-      { name: "Frontend", items: ["React", "Vue.js", "Angular", "Next.js", "Tailwind CSS"] },
-      { name: "Backend", items: ["Node.js", "Python", "PHP", "Ruby on Rails", "Java"] },
+      {
+        name: "Frontend",
+        items: ["React", "Vue.js", "Angular", "Next.js", "Tailwind CSS"],
+      },
+      {
+        name: "Backend",
+        items: ["Node.js", "Python", "PHP", "Ruby on Rails", "Java"],
+      },
       { name: "Databases", items: ["PostgreSQL", "MongoDB", "MySQL", "Redis"] },
-      { name: "DevOps", items: ["Docker", "CI/CD", "AWS", "Vercel", "Netlify"] },
+      {
+        name: "DevOps",
+        items: ["Docker", "CI/CD", "AWS", "Vercel", "Netlify"],
+      },
     ],
     process: [
-      { step: 1, title: "Discovery", description: "Gather requirements and plan architecture" },
-      { step: 2, title: "Design", description: "Create wireframes and visual designs" },
-      { step: 3, title: "Development", description: "Build frontend and backend systems" },
-      { step: 4, title: "Testing", description: "Ensure quality and performance" },
-      { step: 5, title: "Deployment", description: "Launch to production environment" },
-      { step: 6, title: "Support", description: "Provide maintenance and updates" },
+      {
+        step: 1,
+        title: "Discovery",
+        description: "Gather requirements and plan architecture",
+      },
+      {
+        step: 2,
+        title: "Design",
+        description: "Create wireframes and visual designs",
+      },
+      {
+        step: 3,
+        title: "Development",
+        description: "Build frontend and backend systems",
+      },
+      {
+        step: 4,
+        title: "Testing",
+        description: "Ensure quality and performance",
+      },
+      {
+        step: 5,
+        title: "Deployment",
+        description: "Launch to production environment",
+      },
+      {
+        step: 6,
+        title: "Support",
+        description: "Provide maintenance and updates",
+      },
     ],
     benefits: [
       "Professional online presence",
@@ -802,18 +1087,59 @@ export const serviceDetailsList = [
       "Scalable automation frameworks",
     ],
     technologies: [
-      { name: "Platforms", items: ["UiPath", "Automation Anywhere", "Blue Prism", "Microsoft Power Automate"] },
-      { name: "AI Integration", items: ["OCR", "NLP", "Machine learning", "Computer vision"] },
-      { name: "Integration", items: ["API", "Database", "Legacy systems", "ERP/CRM"] },
-      { name: "Analytics", items: ["Process mining", "Performance dashboards", "ROI tracking"] },
+      {
+        name: "Platforms",
+        items: [
+          "UiPath",
+          "Automation Anywhere",
+          "Blue Prism",
+          "Microsoft Power Automate",
+        ],
+      },
+      {
+        name: "AI Integration",
+        items: ["OCR", "NLP", "Machine learning", "Computer vision"],
+      },
+      {
+        name: "Integration",
+        items: ["API", "Database", "Legacy systems", "ERP/CRM"],
+      },
+      {
+        name: "Analytics",
+        items: ["Process mining", "Performance dashboards", "ROI tracking"],
+      },
     ],
     process: [
-      { step: 1, title: "Process Assessment", description: "Identify automation candidates" },
-      { step: 2, title: "Process Design", description: "Map and optimize workflows" },
-      { step: 3, title: "Bot Development", description: "Build and configure automation" },
-      { step: 4, title: "Testing", description: "Validate functionality and edge cases" },
-      { step: 5, title: "Deployment", description: "Roll out to production environment" },
-      { step: 6, title: "Monitoring", description: "Track performance and maintain bots" },
+      {
+        step: 1,
+        title: "Process Assessment",
+        description: "Identify automation candidates",
+      },
+      {
+        step: 2,
+        title: "Process Design",
+        description: "Map and optimize workflows",
+      },
+      {
+        step: 3,
+        title: "Bot Development",
+        description: "Build and configure automation",
+      },
+      {
+        step: 4,
+        title: "Testing",
+        description: "Validate functionality and edge cases",
+      },
+      {
+        step: 5,
+        title: "Deployment",
+        description: "Roll out to production environment",
+      },
+      {
+        step: 6,
+        title: "Monitoring",
+        description: "Track performance and maintain bots",
+      },
     ],
     benefits: [
       "Significant time savings on routine tasks",
@@ -841,18 +1167,51 @@ export const serviceDetailsList = [
       "Continuous model improvement",
     ],
     technologies: [
-      { name: "Frameworks", items: ["TensorFlow", "PyTorch", "Scikit-learn", "XGBoost"] },
+      {
+        name: "Frameworks",
+        items: ["TensorFlow", "PyTorch", "Scikit-learn", "XGBoost"],
+      },
       { name: "Data Processing", items: ["Pandas", "NumPy", "Spark", "Dask"] },
-      { name: "Cloud ML", items: ["AWS SageMaker", "Google Vertex AI", "Azure ML"] },
-      { name: "Deployment", items: ["Docker", "Kubernetes", "Model serving", "API development"] },
+      {
+        name: "Cloud ML",
+        items: ["AWS SageMaker", "Google Vertex AI", "Azure ML"],
+      },
+      {
+        name: "Deployment",
+        items: ["Docker", "Kubernetes", "Model serving", "API development"],
+      },
     ],
     process: [
-      { step: 1, title: "Problem Framing", description: "Define ML objectives and metrics" },
-      { step: 2, title: "Data Preparation", description: "Collect, clean, and transform data" },
-      { step: 3, title: "Feature Engineering", description: "Create relevant model inputs" },
-      { step: 4, title: "Model Development", description: "Train and tune ML models" },
-      { step: 5, title: "Evaluation", description: "Validate against business metrics" },
-      { step: 6, title: "Deployment", description: "Integrate into production systems" },
+      {
+        step: 1,
+        title: "Problem Framing",
+        description: "Define ML objectives and metrics",
+      },
+      {
+        step: 2,
+        title: "Data Preparation",
+        description: "Collect, clean, and transform data",
+      },
+      {
+        step: 3,
+        title: "Feature Engineering",
+        description: "Create relevant model inputs",
+      },
+      {
+        step: 4,
+        title: "Model Development",
+        description: "Train and tune ML models",
+      },
+      {
+        step: 5,
+        title: "Evaluation",
+        description: "Validate against business metrics",
+      },
+      {
+        step: 6,
+        title: "Deployment",
+        description: "Integrate into production systems",
+      },
     ],
     benefits: [
       "Accurate predictions for business planning",
@@ -880,18 +1239,51 @@ export const serviceDetailsList = [
       "Voice recognition integration",
     ],
     technologies: [
-      { name: "Models", items: ["BERT", "GPT", "T5", "RoBERTa", "Custom models"] },
+      {
+        name: "Models",
+        items: ["BERT", "GPT", "T5", "RoBERTa", "Custom models"],
+      },
       { name: "Libraries", items: ["Hugging Face", "spaCy", "NLTK", "Gensim"] },
-      { name: "Cloud NLP", items: ["Google NLP", "AWS Comprehend", "Azure Text Analytics"] },
-      { name: "Deployment", items: ["API services", "Edge deployment", "Embedded solutions"] },
+      {
+        name: "Cloud NLP",
+        items: ["Google NLP", "AWS Comprehend", "Azure Text Analytics"],
+      },
+      {
+        name: "Deployment",
+        items: ["API services", "Edge deployment", "Embedded solutions"],
+      },
     ],
     process: [
-      { step: 1, title: "Use Case Definition", description: "Identify language processing needs" },
-      { step: 2, title: "Data Collection", description: "Gather relevant text data" },
-      { step: 3, title: "Model Selection", description: "Choose appropriate NLP approaches" },
-      { step: 4, title: "Training", description: "Fine-tune models on domain data" },
-      { step: 5, title: "Evaluation", description: "Test language understanding accuracy" },
-      { step: 6, title: "Integration", description: "Deploy into applications" },
+      {
+        step: 1,
+        title: "Use Case Definition",
+        description: "Identify language processing needs",
+      },
+      {
+        step: 2,
+        title: "Data Collection",
+        description: "Gather relevant text data",
+      },
+      {
+        step: 3,
+        title: "Model Selection",
+        description: "Choose appropriate NLP approaches",
+      },
+      {
+        step: 4,
+        title: "Training",
+        description: "Fine-tune models on domain data",
+      },
+      {
+        step: 5,
+        title: "Evaluation",
+        description: "Test language understanding accuracy",
+      },
+      {
+        step: 6,
+        title: "Integration",
+        description: "Deploy into applications",
+      },
     ],
     benefits: [
       "Automated content analysis at scale",
@@ -921,16 +1313,46 @@ export const serviceDetailsList = [
     technologies: [
       { name: "Languages", items: ["Python", "R", "SQL", "Julia"] },
       { name: "Libraries", items: ["Pandas", "NumPy", "SciPy", "Statsmodels"] },
-      { name: "Visualization", items: ["Matplotlib", "Seaborn", "Plotly", "D3.js"] },
-      { name: "Big Data", items: ["Spark", "Hadoop", "Databricks", "Snowflake"] },
+      {
+        name: "Visualization",
+        items: ["Matplotlib", "Seaborn", "Plotly", "D3.js"],
+      },
+      {
+        name: "Big Data",
+        items: ["Spark", "Hadoop", "Databricks", "Snowflake"],
+      },
     ],
     process: [
-      { step: 1, title: "Problem Definition", description: "Clarify business questions" },
-      { step: 2, title: "Data Collection", description: "Gather and integrate relevant data" },
-      { step: 3, title: "Data Cleaning", description: "Prepare data for analysis" },
-      { step: 4, title: "Exploration", description: "Discover patterns and relationships" },
-      { step: 5, title: "Modeling", description: "Apply statistical and ML techniques" },
-      { step: 6, title: "Interpretation", description: "Translate findings into business insights" },
+      {
+        step: 1,
+        title: "Problem Definition",
+        description: "Clarify business questions",
+      },
+      {
+        step: 2,
+        title: "Data Collection",
+        description: "Gather and integrate relevant data",
+      },
+      {
+        step: 3,
+        title: "Data Cleaning",
+        description: "Prepare data for analysis",
+      },
+      {
+        step: 4,
+        title: "Exploration",
+        description: "Discover patterns and relationships",
+      },
+      {
+        step: 5,
+        title: "Modeling",
+        description: "Apply statistical and ML techniques",
+      },
+      {
+        step: 6,
+        title: "Interpretation",
+        description: "Translate findings into business insights",
+      },
     ],
     benefits: [
       "Evidence-based decision making",
@@ -939,5 +1361,101 @@ export const serviceDetailsList = [
       "Competitive intelligence",
       "Early identification of opportunities and risks",
     ],
+  },
+];
+
+// AI Services
+export const aiDevelopmentServices = [
+  {
+    id: 1,
+    title: "AI-Powered Business Solutions",
+    image: require("../assets/images/services/ai.webp"),
+    description:
+      "We develop custom AI solutions that transform your business operations by automating processes, generating actionable insights, and enabling intelligent decision-making. Our AI implementations help you reduce operational costs, improve efficiency, and create competitive advantages through advanced data analysis and predictive capabilities.",
+  },
+  {
+    id: 2,
+    title: "Machine Learning Solutions",
+    image: require("../assets/images/services/ml.webp"),
+    description:
+      "Our machine learning solutions leverage your data to predict outcomes, identify patterns, and continuously improve with new information. We build custom ML models for classification, regression, clustering, and recommendation systems that adapt to your specific business needs and integrate seamlessly with your existing systems.",
+  },
+  {
+    id: 3,
+    title: "Natural Language Processing",
+    image: require("../assets/images/services/chatbot.webp"),
+    description:
+      "We create NLP solutions that enable your systems to understand, interpret, and generate human language. From sentiment analysis and text classification to chatbots and voice assistants, our NLP implementations help you extract valuable insights from unstructured text data and enhance customer interactions through intelligent conversation interfaces.",
+  },
+  {
+    id: 4,
+    title: "Computer Vision Systems",
+    image: require("../assets/images/landing page/ai/Computer Vision Systems.webp"),
+    description:
+      "Our computer vision solutions enable machines to interpret and understand visual information from the world. We develop systems for image recognition, object detection, facial recognition, and video analysis that can automate visual inspection processes, enhance security systems, and create new interactive experiences for your customers.",
+  },
+];
+
+// AR/VR Development Services
+export const arvrDevelopmentServices = [
+  {
+    id: 1,
+    title: "Virtual Reality Applications",
+    image: require("../assets/images/landing page/arvr/Virtual Reality Applications.webp"),
+    description:
+      "We create immersive VR experiences that transport users to fully interactive digital environments. Our VR applications range from training simulations and virtual showrooms to educational experiences and entertainment applications, all designed to create memorable and impactful user experiences that achieve your business objectives.",
+  },
+  {
+    id: 2,
+    title: "Augmented Reality Solutions",
+    image: require("../assets/images/landing page/arvr/Augmented Reality Solutions.webp"),
+    description:
+      "Our AR solutions overlay digital content onto the real world, creating interactive experiences that enhance how users perceive and interact with their environment. From product visualization and interactive marketing to navigation aids and maintenance assistance, our AR applications help you engage users in innovative ways.",
+  },
+  {
+    id: 3,
+    title: "VR Training & Simulation",
+    image: require("../assets/images/services/gaming.webp"),
+    description:
+      "We develop realistic virtual training environments that improve skill acquisition, retention, and safety for complex or high-risk procedures. Our VR training simulations provide hands-on practice in a safe, controlled environment, reducing training costs and improving learning outcomes across industries.",
+  },
+  {
+    id: 4,
+    title: "3D Modeling & Animation",
+    image: require("../assets/images/landing page/arvr/3D Modeling & Animation.webp"),
+    description:
+      "Our team creates high-quality 3D models and animations that bring your AR/VR experiences to life. From detailed product models and architectural visualizations to character animations and environmental design, we ensure that the visual elements of your AR/VR applications are realistic, engaging, and optimized for performance.",
+  },
+];
+
+// IoT Development Services
+export const iotDevelopmentServices = [
+  {
+    id: 1,
+    title: "IoT Device Prototyping",
+    image: require("../assets/images/landing page/iot/IoT Device Prototyping.webp"),
+    description:
+      "We design and develop custom IoT device prototypes that meet your specific requirements, from sensor selection to firmware development and connectivity solutions. Our rapid prototyping approach helps you validate concepts quickly and iterate based on real-world testing before moving to full-scale production.",
+  },
+  {
+    id: 2,
+    title: "IoT Platform Development",
+    image: require("../assets/images/landing page/iot/IoT Platform Development.webp"),
+    description:
+      "We build scalable IoT platforms that connect devices, collect and analyze data, and provide actionable insights through intuitive dashboards and automated workflows. Our platforms include device management, data storage, analytics, and visualization components that work together to deliver value from your IoT implementation.",
+  },
+  {
+    id: 3,
+    title: "Industrial IoT Solutions",
+    image: require("../assets/images/landing page/iot/Industrial IoT Solutions.webp"),
+    description:
+      "Our industrial IoT solutions help manufacturing and production facilities monitor equipment performance, predict maintenance needs, and optimize operations. By connecting machines and systems, we enable real-time monitoring, anomaly detection, and process automation that improve efficiency and reduce downtime.",
+  },
+  {
+    id: 4,
+    title: "Smart Home & Building Automation",
+    image: require("../assets/images/landing page/iot/Smart Home & Building Automation.webp"),
+    description:
+      "We develop IoT systems for residential and commercial buildings that enhance comfort, security, and energy efficiency. Our solutions include automated lighting, climate control, security systems, and energy management that can be controlled remotely and operate intelligently based on user preferences and environmental conditions.",
   },
 ];

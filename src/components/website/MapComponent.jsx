@@ -20,8 +20,8 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapComponent = () => {
-  // Use useMemo to memoize the location array
-  const location = useMemo(() => [12.960951, 77.648331], []);
+  // Use useMemo to memoize the location array - Chennai coordinates
+  const location = useMemo(() => [13.0269, 80.2417], []); // Chennai coordinates for headquarters
 
   const mapRef = useRef(); // Reference to the map
 
@@ -47,7 +47,20 @@ const MapComponent = () => {
         attribution=""
       />
       <Marker position={location}>
-        <Popup>{companyDetails.address}</Popup>
+        <Popup>
+          <div>
+            <strong>Headquarters:</strong><br />
+            {companyDetails.address.headquarters}
+          </div>
+        </Popup>
+      </Marker>
+      <Marker position={[12.960951, 77.648331]}>
+        <Popup>
+          <div>
+            <strong>Registered Office:</strong><br />
+            {companyDetails.address.registered}
+          </div>
+        </Popup>
       </Marker>
     </MapContainer>
   );

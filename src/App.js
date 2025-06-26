@@ -24,6 +24,7 @@ const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 const AIServices = lazy(() => import("./pages/AIServices"));
 const ARVRDevelopment = lazy(() => import("./pages/ARVRDevelopment"));
+const IoTDevelopment = lazy(() => import("./pages/IoTDevelopment"));
 
 AOS.init({
   once: true,
@@ -48,10 +49,12 @@ function App() {
               <Route path="blogs" element={<Blogs />} />
               <Route path="/blogs/:slug" element={<BlogDetails />} />
               <Route path="services" element={<OurServices />} />
+              <Route path="services/ai-development" element={<AIServices />} />
+              <Route path="services/arvr-development" element={<ARVRDevelopment />} />
+              <Route path="services/iot-development" element={<IoTDevelopment />} />
               <Route path="services/:page" element={<ServiceDetails />} />
               <Route path="contact-us" element={<ContactUs />} />
-              <Route path="ai-services" element={<AIServices />} />
-              <Route path="ar-vr-development" element={<ARVRDevelopment />} />
+              {/* These routes are now handled in the LandingPageLayout section */}
             </Route>
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/" element={<LandingPageLayout />}>
@@ -62,6 +65,18 @@ function App() {
               <Route
                 path="app-development"
                 element={<LandingPage page="app" />}
+              />
+              <Route
+                path="ai-services"
+                element={<LandingPage page="ai" />}
+              />
+              <Route
+                path="ar-vr-development"
+                element={<LandingPage page="arvr" />}
+              />
+              <Route
+                path="iot-development"
+                element={<LandingPage page="iot" />}
               />
             </Route>
           </Routes>

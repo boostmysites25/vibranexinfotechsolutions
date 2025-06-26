@@ -3,15 +3,13 @@ import PageBanner from "../components/website/PageBanner";
 import SubHeading from "../components/common/SubHeading";
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
-import { allServices } from "../content/services";
+import { aiDevelopmentServices, allServices } from "../content/services";
 import ContactForm from "../components/common/ContactForm";
 import { motion } from "framer-motion";
 
 const AIServices = () => {
   // Filter AI related services
-  const aiServices = allServices.filter(
-    (service) => service.category === "ai"
-  );
+  const aiServices = aiDevelopmentServices;
 
   // Case studies for AI
   const caseStudies = [
@@ -65,7 +63,10 @@ const AIServices = () => {
         <div className="wrapper">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div data-aos="fade-right">
-              <SubHeading heading="INTELLIGENT AUTOMATION" className="text-secondary" />
+              <SubHeading
+                heading="INTELLIGENT AUTOMATION"
+                className="text-secondary"
+              />
               <h2 className="text1 mb-6">
                 Revolutionize Your Business with AI-Powered Solutions
               </h2>
@@ -73,34 +74,39 @@ const AIServices = () => {
                 At Vibranex, we develop custom AI solutions that transform how
                 businesses operate, make decisions, and engage with customers.
                 Our AI technologies automate complex processes, uncover valuable
-                insights from data, and create intelligent systems that learn and
-                improve over time.
+                insights from data, and create intelligent systems that learn
+                and improve over time.
               </p>
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
                   <p className="desc">
-                    <span className="font-bold">Operational Efficiency:</span> Automate
-                    repetitive tasks and streamline complex workflows
+                    <span className="font-bold">Operational Efficiency:</span>{" "}
+                    Automate repetitive tasks and streamline complex workflows
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
                   <p className="desc">
-                    <span className="font-bold">Data-Driven Insights:</span> Transform
-                    raw data into actionable intelligence for better decision-making
+                    <span className="font-bold">Data-Driven Insights:</span>{" "}
+                    Transform raw data into actionable intelligence for better
+                    decision-making
                   </p>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
                   <p className="desc">
-                    <span className="font-bold">Enhanced Experiences:</span> Create
-                    personalized, responsive interactions for customers and employees
+                    <span className="font-bold">Enhanced Experiences:</span>{" "}
+                    Create personalized, responsive interactions for customers
+                    and employees
                   </p>
                 </div>
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden" data-aos="fade-left">
+            <div
+              className="relative rounded-2xl overflow-hidden"
+              data-aos="fade-left"
+            >
               <img
                 src={require("../assets/images/services/ai.webp")}
                 alt="AI Services"
@@ -125,7 +131,10 @@ const AIServices = () => {
       <section className="py-16">
         <div className="wrapper">
           <div className="text-center mb-12" data-aos="fade-up">
-            <SubHeading heading="OUR OFFERINGS" className="text-secondary w-fit mx-auto" />
+            <SubHeading
+              heading="OUR OFFERINGS"
+              className="text-secondary w-fit mx-auto"
+            />
             <h2 className="text1 mb-4">AI-Powered Business Solutions</h2>
             <p className="desc max-w-3xl mx-auto">
               From intelligent automation to predictive analytics, our AI
@@ -134,7 +143,7 @@ const AIServices = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {aiServices.map((service) => (
               <div
                 key={service.id}
@@ -149,29 +158,34 @@ const AIServices = () => {
                   />
                 </div>
                 <h3 className="text3 mb-3">{service.title}</h3>
-                <p className="desc mb-4">{service.desc}</p>
-                
-                <div className="mb-4">
-                  <h4 className="font-bold text-secondary mb-2">Problem Solved:</h4>
+                <p className="desc mb-4">{service.description}</p>
+
+                {/* <div className="mb-4">
+                  <h4 className="font-bold text-secondary mb-2">
+                    Problem Solved:
+                  </h4>
                   <p className="desc">{service.problem}</p>
                 </div>
-                
+
                 <div className="mb-4">
                   <h4 className="font-bold text-secondary mb-2">Use Case:</h4>
                   <p className="desc">{service.useCase}</p>
                 </div>
-                
+
                 <div className="mb-6">
                   <h4 className="font-bold text-secondary mb-2">Industries:</h4>
                   <div className="flex flex-wrap gap-2">
                     {service.industries.map((industry, index) => (
-                      <span key={index} className="text-xs bg-bgGrey px-3 py-1 rounded-full">
+                      <span
+                        key={index}
+                        className="text-xs bg-bgGrey px-3 py-1 rounded-full"
+                      >
                         {industry}
                       </span>
                     ))}
                   </div>
-                </div>
-                
+                </div> */}
+
                 <Link
                   className="btn-rounded !p-2 border border-secondary text-white hover:bg-secondary hover:text-primary flex items-center gap-2 w-full justify-center"
                   to="/contact-us"
@@ -188,7 +202,10 @@ const AIServices = () => {
       <section className="py-16 bg-bgGrey">
         <div className="wrapper">
           <div className="text-center mb-12" data-aos="fade-up">
-            <SubHeading heading="SUCCESS STORIES" className="text-secondary w-fit mx-auto" />
+            <SubHeading
+              heading="SUCCESS STORIES"
+              className="text-secondary w-fit mx-auto"
+            />
             <h2 className="text1 mb-4">AI Implementation Case Studies</h2>
             <p className="desc max-w-3xl mx-auto">
               Explore how our AI solutions have helped businesses across
@@ -255,7 +272,10 @@ const AIServices = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up">
+          <div
+            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+            data-aos="fade-up"
+          >
             <div className="bg-bgGrey p-6 rounded-xl text-center hover:-translate-y-2 transition-all duration-300">
               <h3 className="text3 mb-3 text-secondary">Machine Learning</h3>
               <ul className="space-y-2">
@@ -304,7 +324,10 @@ const AIServices = () => {
       <section className="py-16 bg-bgGrey">
         <div className="wrapper">
           <div className="text-center mb-12" data-aos="fade-up">
-            <SubHeading heading="OUR APPROACH" className="text-secondary w-fit mx-auto" />
+            <SubHeading
+              heading="OUR APPROACH"
+              className="text-secondary w-fit mx-auto"
+            />
             <h2 className="text1 mb-4">AI Solution Development Process</h2>
             <p className="desc max-w-3xl mx-auto">
               Our structured approach ensures we deliver AI solutions that align
@@ -333,8 +356,8 @@ const AIServices = () => {
               <div className="text-secondary text-5xl font-bold mb-4">03</div>
               <h3 className="text3 mb-3">Solution Design</h3>
               <p className="desc">
-                We design a tailored AI solution architecture that addresses your
-                specific requirements and technical constraints.
+                We design a tailored AI solution architecture that addresses
+                your specific requirements and technical constraints.
               </p>
             </div>
             <div className="bg-primary p-8 rounded-xl border border-secondary hover:-translate-y-2 transition-all duration-300">
@@ -369,7 +392,9 @@ const AIServices = () => {
       <section className="py-16">
         <div className="wrapper">
           <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text1 mb-4">Ready to Transform Your Business with AI?</h2>
+            <h2 className="text1 mb-4">
+              Ready to Transform Your Business with AI?
+            </h2>
             <p className="desc max-w-3xl mx-auto">
               Contact us today to discuss how our AI solutions can help you
               automate processes, gain valuable insights, and create intelligent

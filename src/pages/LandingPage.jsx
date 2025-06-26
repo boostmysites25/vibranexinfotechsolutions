@@ -7,8 +7,9 @@ import CircularText from "../components/common/CircularText";
 import heroImg from "../assets/images/home-hero.webp";
 import webAboutImg from "../assets/images/landing page/web-about.webp";
 import appAboutImg from "../assets/images/landing page/app-about.webp";
-import { PiStrategyBold } from "react-icons/pi";
-import { MdSecurity } from "react-icons/md";
+import aiAboutImg from "../assets/images/services/ai.webp";
+import arvrAboutImg from "../assets/images/services/arvr.webp";
+import iotAboutImg from "../assets/images/landing page/iot/iot-about.webp";
 import { lazy } from "react";
 import { motion } from "framer-motion";
 
@@ -29,6 +30,39 @@ const ContactForm = lazy(() => import("../components/common/ContactForm"));
 
 const LandingPage = ({ page }) => {
   const isWeb = page === "web";
+  const isApp = page === "app";
+  const isAI = page === "ai";
+  const isARVR = page === "arvr";
+  const isIoT = page === "iot";
+  
+  // Get the appropriate title and description based on page type
+  const getPageTitle = () => {
+    if (isWeb) return "Scalable Web Solutions";
+    if (isApp) return "Innovative Mobile Apps";
+    if (isAI) return "Intelligent AI Systems";
+    if (isARVR) return "Immersive AR/VR Experiences";
+    if (isIoT) return "Connected IoT Ecosystems";
+    return "";
+  };
+  
+  const getPageDescription = () => {
+    if (isWeb) return "Designing high-impact websites that boost engagement and accelerate growth.";
+    if (isApp) return "Building next-gen mobile apps that deliver intuitive and seamless experiences.";
+    if (isAI) return "Creating AI solutions that automate processes and drive intelligent decision-making.";
+    if (isARVR) return "Developing immersive experiences that transform how users interact with your brand.";
+    if (isIoT) return "Building connected systems that turn data into intelligent action and business value.";
+    return "";
+  };
+  
+  const getAboutImage = () => {
+    if (isWeb) return webAboutImg;
+    if (isApp) return appAboutImg;
+    if (isAI) return aiAboutImg;
+    if (isARVR) return arvrAboutImg;
+    if (isIoT) return iotAboutImg;
+    return webAboutImg;
+  };
+  
   return (
     <div className="mt-[4.5rem] bg-black">
       {/* Hero Section */}
@@ -67,23 +101,23 @@ const LandingPage = ({ page }) => {
           <div data-aos="fade-up" className="max-w-[50rem] space-y-1">
             <SubHeading
               heading={
-                isWeb
-                  ? "WEB DEVELOPMENT EXPERTS"
-                  : "APP DEVELOPMENT SPECIALISTS"
+                isWeb ? "WEB DEVELOPMENT EXPERTS" :
+                isApp ? "APP DEVELOPMENT SPECIALISTS" :
+                isAI ? "AI SOLUTIONS EXPERTS" :
+                isARVR ? "AR/VR DEVELOPMENT SPECIALISTS" :
+                "IOT DEVELOPMENT EXPERTS"
               }
               className="text-secondary"
             />
             <h1 className="text_xl font-bold">
               Building the Future with{" "}
               <span className="text-secondary">
-                {isWeb ? "Scalable Web Solutions" : "Innovative Mobile Apps"}
+                {getPageTitle()}
               </span>
             </h1>
 
             <p className="desc !text-xl">
-              {isWeb
-                ? "Designing high-impact websites that boost engagement and accelerate growth."
-                : "Building next-gen mobile apps that deliver intuitive and seamless experiences."}
+              {getPageDescription()}
             </p>
 
             <div className="pt-10 flex sm:flex-row flex-col items-center gap-4">
@@ -102,7 +136,13 @@ const LandingPage = ({ page }) => {
                 spy
                 className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-secondary text-white bg-transparent hover:bg-secondary hover:text-primary font-bold"
               >
-                Explore Our {isWeb ? "Web" : "App"} Services
+                Explore Our {
+                  isWeb ? "Web" : 
+                  isApp ? "App" : 
+                  isAI ? "AI" : 
+                  isARVR ? "AR/VR" : 
+                  "IoT"
+                } Services
               </Link>
             </div>
           </div>
@@ -135,11 +175,17 @@ const LandingPage = ({ page }) => {
             >
               <b>Vibranex Infotech</b> empowers forward-thinking businesses with
               transformative{" "}
-              {isWeb
-                ? "web solutions designed to boost digital presence, streamline operations, and drive sustained growth."
-                : "mobile solutions that combine sleek design with high performance for an unmatched user experience."}{" "}
+              {isWeb ? "web solutions designed to boost digital presence, streamline operations, and drive sustained growth." :
+                isApp ? "mobile solutions that combine sleek design with high performance for an unmatched user experience." :
+                isAI ? "AI solutions that automate processes, generate insights, and enable intelligent decision-making." :
+                isARVR ? "AR/VR experiences that create immersive, interactive environments for training, marketing, and entertainment." :
+                "IoT ecosystems that connect devices, analyze data, and enable smart automation across your organization."}{" "}
               Our expertise spans from building intelligent, custom{" "}
-              {isWeb ? "web platforms" : "mobile applications"} to implementing
+              {isWeb ? "web platforms" : 
+               isApp ? "mobile applications" :
+               isAI ? "AI systems" :
+               isARVR ? "immersive experiences" :
+               "connected device networks"} to implementing
               robust AI-powered systems that automate, adapt, and scale.
             </p>
           </div>
@@ -157,7 +203,7 @@ const LandingPage = ({ page }) => {
               <img
                 loading="lazy"
                 data-aos="fade-right"
-                src={isWeb ? webAboutImg : appAboutImg}
+                src={getAboutImage()}
                 className="w-full h-full object-cover rounded-lg"
                 alt="About Us"
               />
@@ -172,7 +218,11 @@ const LandingPage = ({ page }) => {
             <div data-aos="fade-up" className="space-y-6">
               <h2 className="text1 font-bold">
                 Fueling Digital Success with{" "}
-                {isWeb ? "Scalable Web Solutions" : "Innovative App Solutions"}
+                {isWeb ? "Scalable Web Solutions" : 
+                 isApp ? "Innovative App Solutions" :
+                 isAI ? "Intelligent AI Systems" :
+                 isARVR ? "Immersive AR/VR Experiences" :
+                 "Connected IoT Ecosystems"}
               </h2>
 
               <p className="desc">
@@ -180,9 +230,11 @@ const LandingPage = ({ page }) => {
                 digital experiences that transform businesses. Our mission is to
                 deliver secure, intelligent, and future-proof solutions tailored
                 to your unique goals. Whether it's{" "}
-                {isWeb
-                  ? "engineering dynamic websites, developing scalable web platforms,"
-                  : "crafting intuitive mobile applications, optimizing user engagement,"}
+                {isWeb ? "engineering dynamic websites, developing scalable web platforms," :
+                 isApp ? "crafting intuitive mobile applications, optimizing user engagement," :
+                 isAI ? "building intelligent AI systems, automating complex processes," :
+                 isARVR ? "creating immersive virtual environments, enhancing user experiences," :
+                 "connecting smart devices, analyzing IoT data streams,"}
                 or integrating AI-powered tools and data-driven insights, we
                 ensure your business stays ahead of the curve.
                 <br />
@@ -227,8 +279,8 @@ const LandingPage = ({ page }) => {
       {/* Services Section */}
       <ServicesSection page={page} />
 
-      {/* Portfolio Section */}
-      <Portfolio page={page} />
+      {/* Portfolio Section - Only show for Web and App */}
+      {(isWeb || isApp) && <Portfolio page={page} />}
 
       {/* Our Process Section */}
       <OurProcess showButton={true} />
@@ -251,11 +303,21 @@ const LandingPage = ({ page }) => {
               className="text-secondary mx-auto"
             />
             <h2 className="text1 font-bold mt-4">
-              Ready to Transform Your {isWeb ? "Web" : "App"} Experience?
+              Ready to Transform Your {
+                isWeb ? "Web" : 
+                isApp ? "App" : 
+                isAI ? "AI" : 
+                isARVR ? "AR/VR" : 
+                "IoT"
+              } Experience?
             </h2>
             <p className="desc max-w-3xl mx-auto mt-4">
               Contact us today to discuss how our premium{" "}
-              {isWeb ? "web" : "app"} development solutions can help you achieve
+              {isWeb ? "web" : 
+               isApp ? "app" : 
+               isAI ? "AI" : 
+               isARVR ? "AR/VR" : 
+               "IoT"} development solutions can help you achieve
               your business goals and create competitive advantages in the
               digital age.
             </p>

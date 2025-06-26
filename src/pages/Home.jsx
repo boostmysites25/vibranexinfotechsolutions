@@ -88,6 +88,12 @@ const Home = () => {
               >
                 Explore Our Services
               </Link>
+              <ArrowButton
+                to="/blogs"
+                className="border border-secondary text-white bg-transparent hover:bg-secondary hover:text-primary font-bold"
+              >
+                See Real Projects
+              </ArrowButton>
             </div>
           </div>
           <div
@@ -300,6 +306,38 @@ const Home = () => {
 
       {/* Services Section */}
       <AllServices length={6} />
+
+      {/* Case Studies Section */}
+      <section className="py-16 bg-bgGrey">
+        <div className="wrapper space-y-8">
+          <div className="text-center" data-aos="fade-up">
+            <SubHeading
+              heading="CASE STUDIES"
+              className="text-secondary mx-auto"
+            />
+            <h2 className="text1 font-bold mt-4 mb-6">
+              See How We've Helped Real Businesses
+            </h2>
+            <p className="desc max-w-3xl mx-auto">
+              Explore our success stories and learn how our premium technology solutions have transformed businesses across industries.
+            </p>
+          </div>
+
+          <div className="flex justify-center mt-8" data-aos="fade-up">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              <ArrowButton
+                to="/blogs"
+                className="bg-secondary text-primary hover:bg-transparent hover:text-secondary border border-secondary font-bold text-lg"
+              >
+                Explore Our Work
+              </ArrowButton>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* Our Process Section */}
       <OurProcess showButton={true} />
