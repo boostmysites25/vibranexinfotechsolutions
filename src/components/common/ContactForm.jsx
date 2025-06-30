@@ -84,25 +84,25 @@ const ContactForm = () => {
           <div className="flex items-center gap-4">
             <Link 
               to={companyDetails.facebook} 
-              className="w-10 h-10 rounded-full border border-secondary flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300"
+              className="w-10 h-10 rounded-full border border-secondary flex items-center justify-center hover:bg-secondaryText hover:text-primary transition-all duration-300"
             >
               <FaFacebook size={20} />
             </Link>
             <Link 
               to={companyDetails.instagram} 
-              className="w-10 h-10 rounded-full border border-secondary flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300"
+              className="w-10 h-10 rounded-full border border-secondary flex items-center justify-center hover:bg-secondaryText hover:text-primary transition-all duration-300"
             >
               <AiFillInstagram size={20} />
             </Link>
             <Link 
               to={companyDetails.linkedin} 
-              className="w-10 h-10 rounded-full border border-secondary flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300"
+              className="w-10 h-10 rounded-full border border-secondary flex items-center justify-center hover:bg-secondaryText hover:text-primary transition-all duration-300"
             >
               <FaLinkedin size={20} />
             </Link>
             <Link 
               to={companyDetails.twitter} 
-              className="w-10 h-10 rounded-full border border-secondary flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300"
+              className="w-10 h-10 rounded-full border border-secondary flex items-center justify-center hover:bg-secondaryText hover:text-primary transition-all duration-300"
             >
               <FaXTwitter size={20} />
             </Link>
@@ -200,7 +200,7 @@ const ContactForm = () => {
           </div>
           <button
             disabled={isSubmitting}
-            className="w-full btn-rounded bg-secondary text-primary hover:bg-transparent hover:text-secondary border border-secondary flex justify-center disabled:hover:bg-secondary disabled:cursor-not-allowed font-bold py-3"
+            className="w-full btn-rounded bg-secondaryText text-primary hover:bg-transparent hover:text-secondary border border-secondary flex justify-center disabled:hover:bg-secondaryText disabled:cursor-not-allowed font-bold py-3"
           >
             {isSubmitting ? (
               <PiSpinnerGapLight size={20} className="animate-spin" />

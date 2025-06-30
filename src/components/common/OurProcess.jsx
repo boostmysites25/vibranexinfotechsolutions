@@ -81,7 +81,7 @@ const OurProcess = ({ showButton }) => {
               
               {/* Content */}
               <div className="relative z-10">
-                <div className="text-secondary mb-4">{item.icon}</div>
+                <div className="text-secondaryLight mb-4">{item.icon}</div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-4xl font-bold text-secondary/20">{item.id}</span>
                   <h3 className="text3 font-bold">{item.title}</h3>

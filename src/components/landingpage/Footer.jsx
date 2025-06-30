@@ -63,26 +63,41 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="space-y-3">
-              <h5 className="text4 underline underline-offset-4">Our Office</h5>
-              <ul className="flex flex-col gap-2 list-disc pl-5">
+             <div className="max-w-xs space-y-6">
+              <h5 className="text4 text-secondaryLight font-bold">Our Offices</h5>
+              <ul className="flex flex-col gap-5">
                 <li className="text-sm">
-                  <Link to={`tel:${companyDetails.phone}`} className="link">
+                  <span className="font-bold text-secondaryLight">
+                    Headquarters:
+                  </span>
+                  <br />
+                  {companyDetails.address.headquarters}
+                </li>
+                <li className="text-sm">
+                  <span className="font-bold text-secondaryLight">
+                    Registered Office:
+                  </span>
+                  <br />
+                  {companyDetails.address.registered}
+                </li>
+              </ul>
+              <h5 className="text4 text-secondaryLight font-bold">Contact Us</h5>
+              <ul className="flex flex-col gap-3">
+                <li className="text-sm">
+                  <Link
+                    to={`tel:${companyDetails.phone}`}
+                    className="link hover:text-secondaryLight"
+                  >
                     {companyDetails.phone}
                   </Link>
                 </li>
                 <li className="text-sm">
-                  <Link to={`mailto:${companyDetails.email}`} className="link">
+                  <Link
+                    to={`mailto:${companyDetails.email}`}
+                    className="link hover:text-secondaryLight"
+                  >
                     {companyDetails.email}
                   </Link>
-                </li>
-                <li className="text-sm max-w-sm">
-                  <span className="font-bold">Headquarters:</span><br />
-                  {companyDetails.address.headquarters}
-                </li>
-                <li className="text-sm max-w-sm">
-                  <span className="font-bold">Registered Office:</span><br />
-                  {companyDetails.address.registered}
                 </li>
               </ul>
             </div>
