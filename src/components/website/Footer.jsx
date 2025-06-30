@@ -22,7 +22,7 @@ const Footer = () => {
                   loading="lazy"
                   src={logo}
                   alt="logo"
-                  className="w-[13rem] object-contain"
+                  className="w-[13rem] object-contain brightness-150"
                 />
                 <div className="flex items-center gap-3 pt-3">
                   <Link

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Divide as Hamburger } from "hamburger-react";
-import { companyDetails, logo } from "../../content/constant";
+import { companyDetails, headerLogo } from "../../content/constant";
 import Drawer from "react-modern-drawer";
 import { Link, useLocation } from "react-router-dom";
 import { IoClose, IoMail } from "react-icons/io5";
@@ -101,9 +101,9 @@ const Header = () => {
               className="flex items-center gap-2 cursor-pointer"
             >
               <img
-                src={logo}
+                src={headerLogo}
                 alt="logo"
-                className="w-[4rem] sm:w-[5rem] scale-110"
+                className="w-[5rem] sm:w-[7rem] scale-110 brightness-150"
               />
             </Scroll>
 

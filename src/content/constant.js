@@ -1,13 +1,16 @@
 const logo = "/logo.png";
+const headerLogo = "/header-logo.png";
 
-export { logo };
+export { logo, headerLogo };
 
 export const companyDetails = {
   companyName: "TechSolutions",
   phone: "+918667568343",
   address: {
-    headquarters: "TVH Beliciaa Towers, Tower 2 6th Floor, 71/4 M.R.C. Nagar, Raja Annamalai Puram, Chennai, Tamil Nadu, 600028, India",
-    registered: "Unit no-101 Oxford Towers, 139 HAL Old Airport Road, Kodihalli, Bangalore, Karnataka, India. Pincode- 560008"
+    headquarters:
+      "TVH Beliciaa Towers, Tower 2 6th Floor, 71/4 M.R.C. Nagar, Raja Annamalai Puram, Chennai, Tamil Nadu, 600028, India",
+    registered:
+      "Unit no-101 Oxford Towers, 139 HAL Old Airport Road, Kodihalli, Bangalore, Karnataka, India. Pincode- 560008",
   },
   email: "info@vibranexinfotech.com",
   linkedin: "https://www.linkedin.com/company/vibranex-infotech-solutions/",
