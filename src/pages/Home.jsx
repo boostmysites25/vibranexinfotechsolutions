@@ -240,7 +240,7 @@ const Home = () => {
             <div className="bg-bgGrey rounded-2xl overflow-hidden border border-secondary/20 hover:-translate-y-2 transition-all duration-300 group">
               <div className="aspect-video overflow-hidden">
                 <img
-                  src={require("../assets/images/services/ai.webp")}
+                  src={require("../assets/images/ai-services-hero.webp")}
                   alt="AI Services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                 />
@@ -270,7 +270,7 @@ const Home = () => {
             <div className="bg-bgGrey rounded-2xl overflow-hidden border border-secondary/20 hover:-translate-y-2 transition-all duration-300 group">
               <div className="aspect-video overflow-hidden">
                 <img
-                  src={require("../assets/images/services/arvr.webp")}
+                  src={require("../assets/images/landing page/arvr/Augmented Reality Solutions.webp")}
                   alt="AR/VR Development"
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                 />
