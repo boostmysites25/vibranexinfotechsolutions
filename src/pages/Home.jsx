@@ -19,13 +19,9 @@ const AllServices = lazy(() => import("../components/website/AllServices"));
 const OurProcess = lazy(() => import("../components/common/OurProcess"));
 const Testimonials = lazy(() => import("../components/common/Testimonials"));
 const Faq = lazy(() => import("../components/common/FaqNew"));
-const WhyWorkWithUs = lazy(() =>
-  import("../components/common/WhyWorkWithUs")
-);
+const WhyWorkWithUs = lazy(() => import("../components/common/WhyWorkWithUs"));
 const CEOMessage = lazy(() => import("../components/common/CEOMessage"));
-const ContactForm = lazy(() =>
-  import("../components/common/ContactForm")
-);
+const ContactForm = lazy(() => import("../components/common/ContactForm"));
 
 const Home = () => {
   return (
@@ -174,7 +170,6 @@ const Home = () => {
                 and improve over time. Our AR/VR technologies create immersive
                 experiences that revolutionize training, product visualization,
                 and customer engagement.
-               
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3 py-6">
@@ -319,7 +314,8 @@ const Home = () => {
               See How We've Helped Real Businesses
             </h2>
             <p className="desc max-w-3xl mx-auto">
-              Explore our success stories and learn how our premium technology solutions have transformed businesses across industries.
+              Explore our success stories and learn how our premium technology
+              solutions have transformed businesses across industries.
             </p>
           </div>
 
@@ -347,6 +343,20 @@ const Home = () => {
 
       {/* Industries We Serve */}
       <IndustriesWeServe />
+
+      <div className="flex justify-center mt-8" data-aos="fade-up">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
+          <ArrowButton
+            to="/blogs"
+            className="bg-secondary text-primary hover:bg-transparent hover:text-secondary border border-secondary font-bold text-lg"
+          >
+            View Case Studies
+          </ArrowButton>
+        </motion.div>
+      </div>
 
       {/* Testimonials */}
       <Testimonials />

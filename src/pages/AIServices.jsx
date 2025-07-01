@@ -3,7 +3,7 @@ import PageBanner from "../components/website/PageBanner";
 import SubHeading from "../components/common/SubHeading";
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
-import { aiDevelopmentServices, allServices } from "../content/services";
+import { aiDevelopmentServices, } from "../content/services";
 import ContactForm from "../components/common/ContactForm";
 import { motion } from "framer-motion";
 

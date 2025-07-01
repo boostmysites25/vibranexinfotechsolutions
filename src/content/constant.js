@@ -218,7 +218,7 @@ export const industries = [
   {
     id: 4,
     title: "Real Estate",
-    img: require("../assets/images/industries/Insurance.webp"), // Using Insurance as a substitute for Real Estate
+    img: require("../assets/images/industries/RealEstate.webp"),
     desc: "Transforming property management with virtual tours, smart contracts, and predictive analytics.",
   },
   {

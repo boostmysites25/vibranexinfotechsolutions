@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import LandingPageLayout from "./components/landingpage/Layout";
 import { Toaster } from "react-hot-toast";
 import WhatsappIcon from "./components/common/WhatsappIcon";
+import DemoButton from "./components/common/DemoButton";
 
 const Home = lazy(() => import("./pages/Home"));
 const Layout = lazy(() => import("./components/website/Layout"));
@@ -20,11 +21,17 @@ const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Blogs = lazy(() => import("./pages/Blogs"));
 const BlogDetails = lazy(() => import("./pages/BlogDetails"));
 const ContactUs = lazy(() => import("./pages/ContactUs"));
-const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 const AIServices = lazy(() => import("./pages/AIServices"));
 const ARVRDevelopment = lazy(() => import("./pages/ARVRDevelopment"));
 const IoTDevelopment = lazy(() => import("./pages/IoTDevelopment"));
+
+// Import the new landing page components
+const WebLandingPage = lazy(() => import("./pages/landingpages/WebLandingPage"));
+const AppLandingPage = lazy(() => import("./pages/landingpages/AppLandingPage"));
+const AILandingPage = lazy(() => import("./pages/landingpages/AILandingPage"));
+const ARVRLandingPage = lazy(() => import("./pages/landingpages/ARVRLandingPage"));
+const IoTLandingPage = lazy(() => import("./pages/landingpages/IoTLandingPage"));
 
 AOS.init({
   once: true,
@@ -40,6 +47,7 @@ function App() {
           <LoadingSpinnerContext />
           <ScrollToTop />
           <WhatsappIcon />
+          <DemoButton />
           <Toaster position="top-center" />
           <Routes>
             <Route path="/" element={<Layout />}>
@@ -60,23 +68,23 @@ function App() {
             <Route path="/" element={<LandingPageLayout />}>
               <Route
                 path="web-development"
-                element={<LandingPage page="web" />}
+                element={<WebLandingPage />}
               />
               <Route
                 path="app-development"
-                element={<LandingPage page="app" />}
+                element={<AppLandingPage />}
               />
               <Route
                 path="ai-services"
-                element={<LandingPage page="ai" />}
+                element={<AILandingPage />}
               />
               <Route
                 path="ar-vr-development"
-                element={<LandingPage page="arvr" />}
+                element={<ARVRLandingPage />}
               />
               <Route
                 path="iot-development"
-                element={<LandingPage page="iot" />}
+                element={<IoTLandingPage />}
               />
             </Route>
           </Routes>
