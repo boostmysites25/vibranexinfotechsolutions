@@ -5,7 +5,7 @@ import ArrowButton from "../../components/common/ArrowButton";
 import { Link } from "react-scroll";
 import CircularText from "../../components/common/CircularText";
 import heroImg from "../../assets/images/home-hero.webp";
-import arvrAboutImg from "../../assets/images/services/arvr.webp";
+import arvrAboutImg from "../../assets/images/landing page/arvr/arvr-about.webp";
 import { lazy } from "react";
 import { motion } from "framer-motion";
 
@@ -198,6 +198,198 @@ const ARVRLandingPage = () => {
                     <span className="font-bold">Operational Efficiency:</span>{" "}
                     Automate repetitive tasks and streamline complex workflows
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* QR-based Demo Placeholder */}
+      <section className="py-16 bg-primary">
+        <div className="wrapper">
+          <div className="text-center mb-12" data-aos="fade-up">
+            <SubHeading heading="EXPERIENCE AR/VR" className="text-secondary mx-auto" />
+            <h2 className="text1 font-bold mt-4">
+              Try Our AR Demo Right Now
+            </h2>
+            <p className="desc max-w-3xl mx-auto mt-4">
+              Scan the QR code with your smartphone to instantly experience one of our augmented reality demos. No app download required.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="order-2 md:order-1" data-aos="fade-right">
+              <div className="space-y-6">
+                <h3 className="text2 font-bold text-secondary">
+                  Instant AR Experience
+                </h3>
+                <p className="desc">
+                  Our WebAR technology allows you to experience augmented reality directly in your browser. Simply scan the QR code with your smartphone camera and follow the instructions.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex gap-3">
+                    <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
+                    <p className="desc">
+                      <span className="font-bold">No App Required:</span>{" "}
+                      Works directly in your mobile browser
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
+                    <p className="desc">
+                      <span className="font-bold">Interactive Demo:</span>{" "}
+                      Explore a 3D model with touch controls
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
+                    <p className="desc">
+                      <span className="font-bold">Share with Others:</span>{" "}
+                      Send the link to colleagues or clients
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="pt-4">
+                  <ArrowButton
+                    scrollTo="contact"
+                    offset={-100}
+                    className="bg-secondary text-primary hover:bg-transparent hover:text-secondary border border-secondary font-bold"
+                  >
+                    Request Custom AR Demo
+                  </ArrowButton>
+                </div>
+              </div>
+            </div>
+            
+            <div className="order-1 md:order-2 flex justify-center" data-aos="zoom-in">
+              <div className="bg-white p-8 rounded-[2rem] shadow-large max-w-[300px]">
+                {/* Placeholder QR code - replace with actual QR code image */}
+                <div className="bg-black p-2 rounded-xl">
+                  <svg
+                    className="w-full h-auto"
+                    viewBox="0 0 200 200"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect x="0" y="0" width="200" height="200" fill="white" />
+                    {/* This is a simplified QR code pattern for placeholder purposes */}
+                    <rect x="20" y="20" width="40" height="40" fill="black" />
+                    <rect x="140" y="20" width="40" height="40" fill="black" />
+                    <rect x="20" y="140" width="40" height="40" fill="black" />
+                    <rect x="70" y="70" width="60" height="60" fill="black" />
+                    <rect x="30" y="30" width="20" height="20" fill="white" />
+                    <rect x="150" y="30" width="20" height="20" fill="white" />
+                    <rect x="30" y="150" width="20" height="20" fill="white" />
+                    <rect x="70" y="20" width="10" height="40" fill="black" />
+                    <rect x="90" y="20" width="10" height="40" fill="black" />
+                    <rect x="110" y="20" width="10" height="40" fill="black" />
+                    <rect x="20" y="70" width="40" height="10" fill="black" />
+                    <rect x="20" y="90" width="40" height="10" fill="black" />
+                    <rect x="20" y="110" width="40" height="10" fill="black" />
+                    <rect x="140" y="70" width="40" height="10" fill="black" />
+                    <rect x="140" y="90" width="40" height="10" fill="black" />
+                    <rect x="140" y="110" width="40" height="10" fill="black" />
+                    <rect x="70" y="140" width="10" height="40" fill="black" />
+                    <rect x="90" y="140" width="10" height="40" fill="black" />
+                    <rect x="110" y="140" width="10" height="40" fill="black" />
+                  </svg>
+                </div>
+                <p className="text-primary text-center font-bold mt-4">
+                  Scan to Experience AR Demo
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 30s Video Explainer Block */}
+      <section className="py-16 bg-bgGrey">
+        <div className="wrapper">
+          <div className="text-center mb-12" data-aos="fade-up">
+            <SubHeading heading="HOW IT WORKS" className="text-secondary mx-auto" />
+            <h2 className="text1 font-bold mt-4">
+              AR/VR Development Explained
+            </h2>
+            <p className="desc max-w-3xl mx-auto mt-4">
+              Watch our 30-second explainer video to understand how we create immersive AR/VR experiences that transform businesses.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div data-aos="fade-right">
+              <div className="rounded-[2rem] overflow-hidden shadow-large">
+                <div className="aspect-video w-full bg-bgGrey relative">
+                  {/* Placeholder for actual video - replace with actual video component when available */}
+                  <ReactPlayer
+                    url="" 
+                    width="100%"
+                    height="100%"
+                    controls={true}
+                    light={true} // This shows a thumbnail until clicked
+                    playing={false}
+                    config={{
+                      youtube: {
+                        playerVars: { showinfo: 1 }
+                      }
+                    }}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="bg-secondary/20 backdrop-blur-sm p-6 rounded-full">
+                      <div className="w-14 h-14 flex items-center justify-center bg-secondary rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div data-aos="fade-left">
+              <div className="space-y-6">
+                <h3 className="text2 font-bold text-secondary">
+                  Our AR/VR Development Process
+                </h3>
+                <p className="desc">
+                  At Vibranex Infotech, we follow a structured approach to create immersive experiences that deliver real business value. Our process combines technical expertise with creative design to produce AR/VR solutions that engage users and achieve your objectives.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex gap-3">
+                    <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
+                    <p className="desc">
+                      <span className="font-bold">Discovery & Strategy:</span>{" "}
+                      We identify your goals and define the optimal AR/VR approach
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
+                    <p className="desc">
+                      <span className="font-bold">Design & Development:</span>{" "}
+                      Our team creates immersive 3D environments and interactive elements
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
+                    <p className="desc">
+                      <span className="font-bold">Testing & Deployment:</span>{" "}
+                      We ensure a seamless experience across all target devices
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="pt-4">
+                  <ArrowButton
+                    scrollTo="contact"
+                    offset={-100}
+                    className="bg-secondary text-primary hover:bg-transparent hover:text-secondary border border-secondary font-bold"
+                  >
+                    Start Your AR/VR Project
+                  </ArrowButton>
                 </div>
               </div>
             </div>

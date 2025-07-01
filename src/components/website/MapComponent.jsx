@@ -20,22 +20,22 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapComponent = () => {
-  // Use useMemo to memoize the location array - Chennai coordinates
-  const location = useMemo(() => [13.0269, 80.2417], []); // Chennai coordinates for headquarters
+  // Use useMemo to memoize the location array - TVH Beliciaa Towers coordinates
+  const location = useMemo(() => [13.01889, 80.27389], []); // TVH Beliciaa Towers, Raja Annamalai Puram, Chennai coordinates
 
   const mapRef = useRef(); // Reference to the map
 
   // Center the map to the location when it loads
   useEffect(() => {
     if (mapRef.current) {
-      mapRef.current.setView(location, 13); // Set view to the location and zoom level
+      mapRef.current.setView(location, 16); // Set view to the location and zoom level
     }
   }, [location]); // Now location will not change on every render
 
   return (
     <MapContainer
       center={location}
-      zoom={13}
+      zoom={16}
       className="h-[70vh] w-full z-0 outline-none mt-10"
       whenCreated={(mapInstance) => (mapRef.current = mapInstance)} // Save the map instance to ref
       scrollWheelZoom={false} // Disable zooming with the scroll wheel
@@ -50,7 +50,7 @@ const MapComponent = () => {
         <Popup>
           <div>
             <strong>Headquarters:</strong><br />
-            {companyDetails.address.headquarters}
+            TVH Beliciaa Towers, Tower 2 6th Floor, 71/4 M.R.C. Nagar, Raja Annamalai Puram, Chennai, Tamil Nadu, 600028, India
           </div>
         </Popup>
       </Marker>
