@@ -4,7 +4,7 @@ const headerLogo = "/header-logo.png";
 export { logo, headerLogo };
 
 export const companyDetails = {
-  companyName: "TechSolutions",
+  companyName: "Vibranex Infotech Solutions",
   phone: "+918667568343",
   address: {
     headquarters:

@@ -1364,7 +1364,7 @@ export const serviceDetailsList = [
   },
   {
     id: 17,
-    title: "UI/UX Design Services",
+    title: "UI/UX Design",
     shortDescription: "Creating intuitive, engaging user experiences",
     heroImage: "/images/services/uiux-design.jpg",
     overview:
