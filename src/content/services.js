@@ -1362,6 +1362,156 @@ export const serviceDetailsList = [
       "Early identification of opportunities and risks",
     ],
   },
+  {
+    id: 17,
+    title: "UI/UX Design Services",
+    shortDescription: "Creating intuitive, engaging user experiences",
+    heroImage: "/images/services/uiux-design.jpg",
+    overview:
+      "We design digital experiences that users love—intuitive, engaging, and aligned with your business goals. Our UI/UX design services combine aesthetic appeal with functional efficiency to create interfaces that delight users while driving conversions and brand loyalty.",
+    features: [
+      "User research and persona development",
+      "Information architecture",
+      "Wireframing and prototyping",
+      "Visual design and branding",
+      "Interaction design",
+      "Usability testing",
+      "Responsive design",
+      "Design systems creation",
+    ],
+    technologies: [
+      {
+        name: "Design Tools",
+        items: ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin"],
+      },
+      {
+        name: "Prototyping",
+        items: ["Framer", "Principle", "ProtoPie", "Flinto"],
+      },
+      {
+        name: "Research",
+        items: ["UserTesting", "Hotjar", "Optimal Workshop", "Lookback"],
+      },
+      {
+        name: "Collaboration",
+        items: ["Miro", "Abstract", "Notion", "Confluence"],
+      },
+    ],
+    process: [
+      {
+        step: 1,
+        title: "Discovery",
+        description: "Understand user needs and business goals",
+      },
+      {
+        step: 2,
+        title: "Research",
+        description: "Analyze user behavior and preferences",
+      },
+      {
+        step: 3,
+        title: "Information Architecture",
+        description: "Structure content and user flows",
+      },
+      {
+        step: 4,
+        title: "Wireframing",
+        description: "Create low-fidelity interface layouts",
+      },
+      {
+        step: 5,
+        title: "Visual Design",
+        description: "Develop high-fidelity mockups and UI elements",
+      },
+      {
+        step: 6,
+        title: "Prototyping & Testing",
+        description: "Validate designs with real users",
+      },
+    ],
+    benefits: [
+      "Increased user engagement and retention",
+      "Higher conversion rates",
+      "Reduced development costs through early validation",
+      "Stronger brand identity and recognition",
+      "Improved customer satisfaction and loyalty",
+    ],
+  },
+  {
+    id: 18,
+    title: "CRM Software Development",
+    shortDescription: "Custom relationship management solutions for business growth",
+    heroImage: "/images/services/crm-development.jpg",
+    overview:
+      "We build custom CRM solutions that streamline customer relationships, automate sales processes, and provide actionable insights for business growth. Our CRM development services help you manage contacts, track interactions, and optimize your sales and marketing efforts through tailored software that fits your unique workflow.",
+    features: [
+      "Contact and lead management",
+      "Sales pipeline automation",
+      "Customer interaction tracking",
+      "Marketing campaign integration",
+      "Analytics and reporting dashboards",
+      "Email and communication tools",
+      "Task and workflow automation",
+      "Mobile CRM access",
+    ],
+    technologies: [
+      {
+        name: "Platforms",
+        items: ["Salesforce", "Microsoft Dynamics", "HubSpot", "Custom solutions"],
+      },
+      {
+        name: "Development",
+        items: ["JavaScript", "Python", "PHP", ".NET", "Node.js"],
+      },
+      {
+        name: "Integration",
+        items: ["REST APIs", "GraphQL", "Webhooks", "ETL tools"],
+      },
+      {
+        name: "Databases",
+        items: ["SQL Server", "PostgreSQL", "MongoDB", "Oracle"],
+      },
+    ],
+    process: [
+      {
+        step: 1,
+        title: "Requirements Analysis",
+        description: "Define CRM needs and business processes",
+      },
+      {
+        step: 2,
+        title: "System Design",
+        description: "Create CRM architecture and data models",
+      },
+      {
+        step: 3,
+        title: "Development",
+        description: "Build custom features and integrations",
+      },
+      {
+        step: 4,
+        title: "Data Migration",
+        description: "Transfer existing customer data",
+      },
+      {
+        step: 5,
+        title: "Testing",
+        description: "Ensure functionality and usability",
+      },
+      {
+        step: 6,
+        title: "Training & Deployment",
+        description: "Implement and onboard users",
+      },
+    ],
+    benefits: [
+      "Improved customer retention and satisfaction",
+      "Increased sales conversion rates",
+      "Enhanced team collaboration and efficiency",
+      "Data-driven decision making",
+      "Streamlined business processes and automation",
+    ],
+  },
 ];
 
 // AI Services

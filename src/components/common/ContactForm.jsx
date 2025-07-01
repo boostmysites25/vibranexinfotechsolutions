@@ -200,7 +200,7 @@ const ContactForm = () => {
           </div>
           <button
             disabled={isSubmitting}
-            className="w-full btn-rounded bg-secondaryText text-primary hover:bg-transparent hover:text-secondary border border-secondary flex justify-center disabled:hover:bg-secondaryText disabled:cursor-not-allowed font-bold py-3"
+            className="w-full btn-rounded bg-secondaryText text-secondary hover:bg-secondary hover:text-primary border border-secondary flex justify-center disabled:hover:bg-secondaryText disabled:cursor-not-allowed font-bold py-3"
           >
             {isSubmitting ? (
               <PiSpinnerGapLight size={20} className="animate-spin" />

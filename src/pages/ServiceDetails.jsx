@@ -127,7 +127,7 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
               data-aos="fade-left"
             >
               OVERVIEW
@@ -149,7 +149,7 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondaryLight"
               data-aos="fade-left"
             >
               KEY FEATURES
@@ -187,7 +187,7 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
               data-aos="fade-left"
             >
               TECHNOLOGIES
@@ -214,7 +214,7 @@ const ServiceDetails = () => {
                   {tech.name === "Frameworks" && (
                     <SiTensorflow className="mr-2" />
                   )}
-                  <h3 className="font-mono text-sm md:text-base font-bold text-primary">
+                  <h3 className="font-mono text-sm md:text-base font-bold text-secondary">
                     {tech.name}
                   </h3>
                 </div>
@@ -243,7 +243,7 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
               data-aos="fade-left"
             >
               OUR PROCESS
@@ -262,14 +262,14 @@ const ServiceDetails = () => {
                   data-aos-delay={index * 100}
                 >
                   {/* Timeline dot */}
-                  <div className="absolute -left-6 md:-left-8 top-1/2 transform -translate-y-1/2 h-4 w-4 md:h-5 md:w-5 rounded-full bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/30" />
+                  <div className="absolute -left-6 md:-left-8 top-1/2 transform -translate-y-1/2 h-4 w-4 md:h-5 md:w-5 rounded-full bg-gradient-to-r from-secondaryLight to-secondary shadow-lg shadow-primary/30" />
 
                   <motion.div
                     className="bg-gray-800/50 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-gray-700 hover:border-secondary transition-all duration-300"
                     whileHover={{ x: 10 }}
                   >
                     <div className="flex items-center mb-2">
-                      <span className="text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mr-2 md:mr-3">
+                      <span className="text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondaryLight to-secondary mr-2 md:mr-3">
                         {step.step}.
                       </span>
                       <h3 className="text-lg md:text-xl font-bold text-gray-100">
@@ -295,7 +295,7 @@ const ServiceDetails = () => {
                 data-aos="fade-right"
               />
               <h2
-                className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+                className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
                 data-aos="fade-left"
               >
                 INTERACTIVE DEMOS
@@ -479,7 +479,7 @@ const ServiceDetails = () => {
                 data-aos="fade-right"
               />
               <h2
-                className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+                className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
                 data-aos="fade-left"
               >
                 CLIENT TESTIMONIALS
@@ -596,7 +596,7 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
               data-aos="fade-left"
             >
               BENEFITS
