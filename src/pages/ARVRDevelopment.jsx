@@ -106,7 +106,7 @@ const ARVRDevelopment = () => {
             </div>
             <div
               className="relative rounded-2xl overflow-hidden"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               <img
                 src={require("../assets/images/services/arvr.webp")}

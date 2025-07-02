@@ -128,7 +128,7 @@ const ServiceDetails = () => {
             />
             <h2
               className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               OVERVIEW
             </h2>
@@ -150,7 +150,7 @@ const ServiceDetails = () => {
             />
             <h2
               className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondaryLight"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               KEY FEATURES
             </h2>
@@ -188,7 +188,7 @@ const ServiceDetails = () => {
             />
             <h2
               className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               TECHNOLOGIES
             </h2>
@@ -244,7 +244,7 @@ const ServiceDetails = () => {
             />
             <h2
               className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               OUR PROCESS
             </h2>
@@ -296,7 +296,7 @@ const ServiceDetails = () => {
               />
               <h2
                 className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
-                data-aos="fade-left"
+                data-aos="fade-up"
               >
                 INTERACTIVE DEMOS
               </h2>
@@ -480,7 +480,7 @@ const ServiceDetails = () => {
               />
               <h2
                 className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
-                data-aos="fade-left"
+                data-aos="fade-up"
               >
                 CLIENT TESTIMONIALS
               </h2>
@@ -597,7 +597,7 @@ const ServiceDetails = () => {
             />
             <h2
               className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondaryLight to-secondary"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               BENEFITS
             </h2>

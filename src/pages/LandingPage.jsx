@@ -111,7 +111,7 @@ const LandingPage = ({ page }) => {
             },
           }}
         />
-        <div className="wrapper absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] flex flex-col-reverse gap-5 sm:grid grid-cols-[1fr,20%] items-center">
+        <div className="wrapper absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] flex flex-col-reverse gap-5 sm:gap-10 lg:gap-7 lg:grid grid-cols-[1fr,20%] items-center">
           <div data-aos="fade-up" className="max-w-[50rem] space-y-1">
             <SubHeading
               heading={
@@ -166,7 +166,7 @@ const LandingPage = ({ page }) => {
           </div>
           <div
             data-aos="zoom-in"
-            className="flex justify-end sm:self-end sm:pr-[3rem] lg:pr-[8rem]"
+            className="flex justify-end lg:self-end sm:pr-[3rem] lg:pr-[8rem]"
           >
             <CircularText />
           </div>
@@ -186,7 +186,7 @@ const LandingPage = ({ page }) => {
           />
           <div className="p-5 sm:p-6">
             <p
-              data-aos="fade-left"
+              data-aos="fade-up"
               className="text-lg md:text-2xl !font-normal text-white"
             >
               <b>Vibranex Infotech</b> empowers forward-thinking businesses with

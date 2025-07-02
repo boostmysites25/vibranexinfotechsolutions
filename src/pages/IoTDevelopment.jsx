@@ -94,7 +94,7 @@ const IoTDevelopment = () => {
                 </div>
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden" data-aos="fade-left">
+            <div className="relative rounded-2xl overflow-hidden" data-aos="fade-up">
               <img
                 src={require("../assets/images/services/iot.webp")}
                 // src={require("../assets/images/services/iot.webp")}

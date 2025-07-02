@@ -37,7 +37,7 @@ const CEOMessage = () => {
           </div>
 
           {/* CEO Message */}
-          <div data-aos="fade-left" className="relative space-y-6">
+          <div data-aos="fade-up" className="relative space-y-6">
             <FaQuoteLeft className="text-primary/30 text-6xl absolute -top-10 -left-4" />
 
             <h2 className="text2 text-white">
