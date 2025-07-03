@@ -6,6 +6,8 @@ import { MdArrowOutward } from "react-icons/md";
 import { allServices, arvrDevelopmentServices } from "../content/services";
 import ContactForm from "../components/common/ContactForm";
 import { motion } from "framer-motion";
+import ReactPlayer from "react-player";
+import TestimonialVideos from "../components/common/TestimonialVideos";
 
 const ARVRDevelopment = () => {
   // Filter AR/VR related services
@@ -333,20 +335,25 @@ const ARVRDevelopment = () => {
             />
             <h2 className="text1 mb-4">Demo Videos</h2>
             <p className="desc max-w-3xl mx-auto">
-              See our AR/VR solutions in action with these interactive demonstrations. 
-              Experience how our technology transforms everyday objects and enhances user engagement.
+              See our AR/VR solutions in action with these interactive
+              demonstrations. Experience how our technology transforms everyday
+              objects and enhances user engagement.
             </p>
           </div>
 
           <div className="space-y-16">
             {/* Demo Video 1: Business Card AR */}
-            <div className="grid md:grid-cols-2 gap-10 items-center" data-aos="fade-up">
+            <div
+              className="grid md:grid-cols-2 gap-10 items-center"
+              data-aos="fade-up"
+            >
               <div>
                 <h3 className="text2 mb-4">Interactive Business Cards</h3>
                 <p className="desc mb-6">
-                  Transform traditional business cards into interactive digital experiences. 
-                  Our AR business cards display 3D models, videos, contact information, and 
-                  social media profiles when scanned with a smartphone.
+                  Transform traditional business cards into interactive digital
+                  experiences. Our AR business cards display 3D models, videos,
+                  contact information, and social media profiles when scanned
+                  with a smartphone.
                 </p>
                 <div className="mb-6">
                   <h4 className="font-bold text-secondary mb-3">Features:</h4>
@@ -380,34 +387,49 @@ const ARVRDevelopment = () => {
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ repeat: Infinity, duration: 2 }}
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-secondary" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-secondary"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                     </motion.div>
                   </div>
-                  <p className="text-secondary font-bold">Business Card AR Demo</p>
+                  <p className="text-secondary font-bold">
+                    Business Card AR Demo
+                  </p>
                   <p className="text-sm opacity-70 mt-2">Video coming soon</p>
                 </div>
                 {/* Actual video will be placed here */}
-                {/* <video 
+                {/* <ReactPlayer
+                  url={require("../assets/videos/ar-business-card-demo.mp4")}
+                  width="100%"
+                  height="100%"
+                  controls={true}
+                  playing={false}
                   className="w-full h-full object-cover"
-                  controls
-                  poster={require("../assets/images/services/ar-business-card-poster.webp")}
-                >
-                  <source src="/videos/ar-business-card-demo.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
+                /> */}
               </div>
             </div>
 
             {/* Demo Video 2: Menu Card AR */}
-            <div className="grid md:grid-cols-2 gap-10 items-center md:grid-flow-dense" data-aos="fade-up">
+            <div
+              className="grid md:grid-cols-2 gap-10 items-center md:grid-flow-dense"
+              data-aos="fade-up"
+            >
               <div className="md:col-start-2">
                 <h3 className="text2 mb-4">Interactive Menu Cards</h3>
                 <p className="desc mb-6">
-                  Enhance dining experiences with our AR menu solutions. Customers can 
-                  visualize dishes in 3D before ordering, view ingredient information, 
-                  and even see preparation methods through engaging animations.
+                  Enhance dining experiences with our AR menu solutions.
+                  Customers can visualize dishes in 3D before ordering, view
+                  ingredient information, and even see preparation methods
+                  through engaging animations.
                 </p>
                 <div className="mb-6">
                   <h4 className="font-bold text-secondary mb-3">Features:</h4>
@@ -422,7 +444,9 @@ const ARVRDevelopment = () => {
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="w-4 h-4 min-w-4 bg-secondary rounded-full mt-[.30rem]" />
-                      <p className="desc">Ingredient highlighting and allergen warnings</p>
+                      <p className="desc">
+                        Ingredient highlighting and allergen warnings
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -441,8 +465,17 @@ const ARVRDevelopment = () => {
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ repeat: Infinity, duration: 2 }}
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-secondary" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-secondary"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                     </motion.div>
                   </div>
@@ -450,25 +483,29 @@ const ARVRDevelopment = () => {
                   <p className="text-sm opacity-70 mt-2">Video coming soon</p>
                 </div>
                 {/* Actual video will be placed here */}
-                {/* <video 
+                {/* <ReactPlayer
+                  url={require("../assets/videos/ar-menu-card-demo.mp4")}
+                  width="100%"
+                  height="100%"
+                  controls={true}
+                  playing={false}
                   className="w-full h-full object-cover"
-                  controls
-                  poster={require("../assets/images/services/ar-menu-card-poster.webp")}
-                >
-                  <source src="/videos/ar-menu-card-demo.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
+                /> */}
               </div>
             </div>
 
             {/* Demo Video 3: Virtual Try-On */}
-            <div className="grid md:grid-cols-2 gap-10 items-center" data-aos="fade-up">
+            <div
+              className="grid md:grid-cols-2 gap-10 items-center"
+              data-aos="fade-up"
+            >
               <div>
                 <h3 className="text2 mb-4">Virtual Try-On Solutions</h3>
                 <p className="desc mb-6">
-                  Allow customers to virtually try products before purchasing. From eyewear and 
-                  jewelry to furniture and home decor, our AR try-on solutions help reduce 
-                  returns and increase purchase confidence.
+                  Allow customers to virtually try products before purchasing.
+                  From eyewear and jewelry to furniture and home decor, our AR
+                  try-on solutions help reduce returns and increase purchase
+                  confidence.
                 </p>
                 <div className="mb-6">
                   <h4 className="font-bold text-secondary mb-3">Features:</h4>
@@ -502,170 +539,41 @@ const ARVRDevelopment = () => {
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ repeat: Infinity, duration: 2 }}
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-secondary" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-secondary"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                     </motion.div>
                   </div>
-                  <p className="text-secondary font-bold">Virtual Try-On Demo</p>
+                  <p className="text-secondary font-bold">
+                    Virtual Try-On Demo
+                  </p>
                   <p className="text-sm opacity-70 mt-2">Video coming soon</p>
                 </div>
                 {/* Actual video will be placed here */}
-                {/* <video 
+                {/* <ReactPlayer
+                  url={require("../assets/videos/virtual-try-on-demo.mp4")}
+                  width="100%"
+                  height="100%"
+                  controls={true}
+                  playing={false}
                   className="w-full h-full object-cover"
-                  controls
-                  poster={require("../assets/images/services/virtual-try-on-poster.webp")}
-                >
-                  <source src="/videos/virtual-try-on-demo.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
+                /> */}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonial Videos Section */}
-      <section className="py-16">
-        <div className="wrapper">
-          <div className="text-center mb-12" data-aos="fade-up">
-            <SubHeading
-              heading="CLIENT FEEDBACK"
-              className="text-secondary w-fit mx-auto"
-            />
-            <h2 className="text1 mb-4">Testimonial Videos</h2>
-            <p className="desc max-w-3xl mx-auto">
-              Hear directly from our clients about how our AR/VR solutions have transformed 
-              their businesses and created exceptional experiences for their customers.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
-            {/* Testimonial Video 1 */}
-            <div className="bg-bgGrey rounded-2xl overflow-hidden">
-              <div className="aspect-video bg-primary/10 relative flex items-center justify-center">
-                {/* Video placeholder - will be replaced with actual testimonial video */}
-                <div className="text-center p-8">
-                  <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <motion.div
-                      animate={{ scale: [1, 1.2, 1] }}
-                      transition={{ repeat: Infinity, duration: 2 }}
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-secondary" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                      </svg>
-                    </motion.div>
-                  </div>
-                  <p className="text-secondary font-bold">Client Testimonial</p>
-                  <p className="text-sm opacity-70 mt-2">Video coming soon</p>
-                </div>
-                {/* Actual video will be placed here */}
-                {/* <video 
-                  className="w-full h-full object-cover"
-                  controls
-                  poster={require("../assets/images/testimonials/testimonial1-poster.webp")}
-                >
-                  <source src="/videos/testimonial1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
-              </div>
-              <div className="p-6">
-                <h3 className="text3 mb-2">Retail Industry Client</h3>
-                <p className="desc mb-3">
-                  "The AR product visualization solution developed by Vibranex has 
-                  revolutionized our customer shopping experience and significantly 
-                  reduced our return rates."
-                </p>
-                <p className="text-sm text-secondary font-medium">
-                  - Marketing Director, Leading Furniture Retailer
-                </p>
-              </div>
-            </div>
-
-            {/* Testimonial Video 2 */}
-            <div className="bg-bgGrey rounded-2xl overflow-hidden">
-              <div className="aspect-video bg-primary/10 relative flex items-center justify-center">
-                {/* Video placeholder - will be replaced with actual testimonial video */}
-                <div className="text-center p-8">
-                  <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <motion.div
-                      animate={{ scale: [1, 1.2, 1] }}
-                      transition={{ repeat: Infinity, duration: 2 }}
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-secondary" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                      </svg>
-                    </motion.div>
-                  </div>
-                  <p className="text-secondary font-bold">Client Testimonial</p>
-                  <p className="text-sm opacity-70 mt-2">Video coming soon</p>
-                </div>
-                {/* Actual video will be placed here */}
-                {/* <video 
-                  className="w-full h-full object-cover"
-                  controls
-                  poster={require("../assets/images/testimonials/testimonial2-poster.webp")}
-                >
-                  <source src="/videos/testimonial2.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
-              </div>
-              <div className="p-6">
-                <h3 className="text3 mb-2">Healthcare Training Client</h3>
-                <p className="desc mb-3">
-                  "The VR training simulations have transformed our medical education 
-                  program, allowing students to practice procedures in a safe environment 
-                  before working with real patients."
-                </p>
-                <p className="text-sm text-secondary font-medium">
-                  - Chief of Medical Education, University Hospital
-                </p>
-              </div>
-            </div>
-
-            {/* Testimonial Video 3 */}
-            <div className="bg-bgGrey rounded-2xl overflow-hidden">
-              <div className="aspect-video bg-primary/10 relative flex items-center justify-center">
-                {/* Video placeholder - will be replaced with actual testimonial video */}
-                <div className="text-center p-8">
-                  <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <motion.div
-                      animate={{ scale: [1, 1.2, 1] }}
-                      transition={{ repeat: Infinity, duration: 2 }}
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-secondary" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                      </svg>
-                    </motion.div>
-                  </div>
-                  <p className="text-secondary font-bold">Client Testimonial</p>
-                  <p className="text-sm opacity-70 mt-2">Video coming soon</p>
-                </div>
-                {/* Actual video will be placed here */}
-                {/* <video 
-                  className="w-full h-full object-cover"
-                  controls
-                  poster={require("../assets/images/testimonials/testimonial3-poster.webp")}
-                >
-                  <source src="/videos/testimonial3.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
-              </div>
-              <div className="p-6">
-                <h3 className="text3 mb-2">Manufacturing Client</h3>
-                <p className="desc mb-3">
-                  "The AR maintenance assistant has reduced our equipment downtime by 
-                  50% and significantly improved the efficiency of our technical team 
-                  when performing complex repairs."
-                </p>
-                <p className="text-sm text-secondary font-medium">
-                  - Operations Manager, Industrial Manufacturing Company
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TestimonialVideos />
 
       {/* Contact Form Section */}
       <section className="py-16 bg-bgGrey">

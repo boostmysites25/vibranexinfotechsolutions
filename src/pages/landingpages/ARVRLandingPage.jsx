@@ -1,5 +1,5 @@
 import ReactPlayer from "react-player";
-import bannerVid from "../../assets/videos/banner.mp4";
+import bannerVid from "../../assets/videos/arvr.mp4";
 import SubHeading from "../../components/common/SubHeading";
 import ArrowButton from "../../components/common/ArrowButton";
 import { Link } from "react-scroll";
@@ -35,17 +35,19 @@ const ARVRLandingPage = () => {
     <div className="mt-[4.5rem] bg-black">
       {/* Hero Section */}
       <section className="relative min-h-screen">
-        <div className="absolute inset-0 bg-primary/80 z-[2]" />
+        <div className="absolute inset-0 bg-primary/20 z-[2]" />
         <ReactPlayer
           url={bannerVid}
           playing
           muted
           loop
           playsinline
+          playbackRate={0.8}
           width="100%"
           height="100%"
           style={{
             objectFit: "cover",
+            objectPosition: "top",
             width: "100%",
             height: "100%",
             position: "absolute",

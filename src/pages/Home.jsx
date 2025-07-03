@@ -10,6 +10,7 @@ import { PiStrategyBold } from "react-icons/pi";
 import { MdSecurity } from "react-icons/md";
 import { lazy } from "react";
 import { motion } from "framer-motion";
+import TestimonialVideos from "../components/common/TestimonialVideos";
 
 const BrandLogos = lazy(() => import("../components/common/BrandLogos"));
 const IndustriesWeServe = lazy(() =>
@@ -28,7 +29,7 @@ const Home = () => {
     <div className="mt-[4.5rem] bg-black">
       {/* Hero Section */}
       <section className="relative min-h-screen">
-        <div className="absolute inset-0 bg-primary/80 z-[2]" />
+        <div className="absolute inset-0 bg-primary/20 z-[2]" />
         <ReactPlayer
           url={bannerVid}
           playing
@@ -343,6 +344,8 @@ const Home = () => {
 
       {/* Industries We Serve */}
       <IndustriesWeServe />
+
+      <TestimonialVideos />
 
       <div className="flex justify-center mt-8" data-aos="fade-up">
         <motion.div
